@@ -1,10 +1,9 @@
 
-
 function App() {
 
   return (
     <>
-      <div className="h-screen flex justify-center items-center">
+      <div className="h-screen flex justify-center items-center bg-primary5">
         <div className="flex gap-8">
           <div>
             <p className="font-boska font-bold text-2xl">Boska Font</p>
