@@ -9,12 +9,13 @@ import location1 from "../../assets/images/location1.png"
 import featured from "../../assets/images/featured-img.png"
 import Hero from './LandingLayout/Hero'
 import ServiceCard from './LandingLayout/ServiceCard'
+import Footer from '../../components/Footer'
 
 
 
 const LandingPage = () => {
     return (
-        <div className='h-[4000px] w-[1440px] position: relative'>
+        <div className=' w-[1440px] position: relative'>
             <Navbar />
             <Hero />
             <section className='h-[985px] mt-[-100px]' style={{
@@ -97,7 +98,7 @@ const LandingPage = () => {
                 </div>
             </section>
             <section>
-                <div className='px-[200px] py-[50px]'>
+                <div className='px-[200px] py-[50px] bg-neutral1'>
                     <p className='text-neutral4 font-semibold text-[20px] mb-5'>Our portfolios</p>
                     <div className='grid grid-cols-2 gap-4'>
                         <ServiceCard
@@ -119,6 +120,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </div >
     )
 }
