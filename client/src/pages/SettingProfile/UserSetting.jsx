@@ -1,10 +1,9 @@
 import React from 'react'
+import Header from '../../components/Header'
 
 const UserSetting = () => {
     return (
-        <div>
-            <h1 className='text-primary1'>hi</h1>
-        </div>
+        <Header />
     )
 }
 

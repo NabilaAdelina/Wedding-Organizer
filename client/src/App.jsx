@@ -1,18 +1,15 @@
+import LandingPage from "./pages/LandingPage/LandingPage"
+import { Routes, Route } from "react-router-dom"
+import UserSetting from "./pages/SettingProfile/UserSetting"
 
 function App() {
 
   return (
     <>
-      <div className="h-screen flex justify-center items-center bg-primary5">
-        <div className="flex gap-8">
-          <div>
-            <p className="font-boska font-bold text-2xl">Boska Font</p>
-          </div>
-          <div>
-            <p className="font-switzer font-bold text-2xl">Switzer font</p>
-          </div>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<LandingPage />}></Route>
+        <Route path="/user/profile" element={<UserSetting />}></Route>
+      </Routes>
     </>
   )
 }
