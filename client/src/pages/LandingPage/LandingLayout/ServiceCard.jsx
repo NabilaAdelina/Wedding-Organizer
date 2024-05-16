@@ -1,16 +1,11 @@
-
+import React from 'react'
 
 const ServiceCard = (props) => {
-
-    const { name, url } = props
     return (
-        <div className='h-[298px] rounded-lg flex justify-center items-end pb-5' style={{
-            backgroundImage: `url(${url})`, backgroundSize: '100% auto'
+        <div className='w-[243px] h-[296px] flex flex-col justify-end items-center pb-2' style={{
+            backgroundImage: `url(${props.url})`, backgroundSize: '100% auto'
         }}>
-            <div>
-                <p className='text-white'>THE WEDDING OF</p>
-                <p className='font-boska font-bold text-[24px] text-white'>{name}</p>
-            </div>
+            <p className='font-boska text-[20px] font-medium text-white'>{props.name}</p>
         </div>
     )
 }

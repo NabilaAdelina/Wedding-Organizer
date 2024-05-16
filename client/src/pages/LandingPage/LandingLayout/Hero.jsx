@@ -1,24 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import heroimg from "../../../assets/images/hero-img.png"
 import { Link } from 'react-router-dom'
 const Hero = () => {
-    const linkNav = [{
-        id: 1,
-        name: "Concept",
-        path: "/concept"
-    }, {
-        id: 2,
-        name: "Schedule",
-        path: "/schedule"
-    }, {
-        id: 3,
-        name: "Cost Plan",
-        path: "/costplan"
-    }]
-
+    const [isLogin, setIsLogin] = useState(true)
     return (
-        <section className='h-[978px] bg-contain flex justify-center items-center' style={{
-            backgroundImage: `url(${heroimg})`, backgroundSize: '100% auto',
+        <section className='h-[872px] bg-contain flex justify-center items-center' style={{
+            backgroundImage: `url(${heroimg})`, backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
         }}>
@@ -30,7 +17,9 @@ const Hero = () => {
                 <p className='font-switzer text-neutral-300 mb-10'>
                     Crafting every detail to shape your perfect wedding day
                 </p>
-                <Link to="/form" className='px-[26px] py-[13px] w-[199px] bg-neutral1 text-primary1 font-bold rounded-md'>Form Planning</Link>
+                {
+                    isLogin ? <Link to="/form" className='px-[26px] py-[13px] w-[199px] bg-neutral1 text-primary1 font-bold rounded-md'>Form Planning</Link> : <p>Scroll</p>
+                }
             </div>
         </section>
     )
