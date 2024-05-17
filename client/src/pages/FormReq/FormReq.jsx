@@ -2,21 +2,13 @@ import React from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-const Request = () => {
+const FormReq = () => {
     return (
         <>
-        <Header />
+            <Header />
             <div class="w-[1440px] h-[1842px] relative">
                 <div class="w-[1440px] h-[1842px] left-0 top-0 absolute bg-white"></div>
-                <div class="h-20 left-0 top-[1762px] absolute bg-neutral-700 flex-col justify-start items-start gap-2.5 inline-flex">
-                    <div class="w-[1440px] h-20 px-[200px] py-4 justify-between items-center inline-flex">
-                        <div className="justify-start items-start gap-2 flex">
-                            <div className="w-6 h-6 p-0.5 justify-center items-center flex"></div>
-                            <div className="w-6 h-6 relative"></div>
-                            <div className="w-6 h-6 px-0.5 py-[3.87px] justify-center items-center flex"></div>
-                        </div>
-                    </div>
-                </div>
+                <div class="h-20 left-0 top-[1762px] absolute bg-neutral-700 flex-col justify-start items-start gap-2.5 inline-flex"></div>
                 <div className="w-[602px] h-[126px] left-[411px] top-[211px] absolute">
                     <div className="left-[124px] top-0 absolute text-neutral-700 text-[55px] font-bold font-['Boska'] leading-normal tracking-widest">Form Planning</div>
                     <div className="w-[602px] h-[26px] left-7 top-[85px] absolute text-neutral-400 text-2xl font-normal font-['Switzer'] leading-normal tracking-wide">We’d love to hear from you. Please fill out this form.</div>
@@ -52,9 +44,9 @@ const Request = () => {
                     </div>
                 </form>
             </div>
-        <Footer/>
+            <Footer />
         </>
     )
 }
 
-export default Request
+export default FormReq
