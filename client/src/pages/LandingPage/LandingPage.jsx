@@ -4,6 +4,7 @@ import Footer from '../../components/Footer'
 import Venue from './LandingLayout/Venue'
 import Service from './LandingLayout/Service'
 import Portfolio from './LandingLayout/Portfolio'
+import Testimonials from './LandingLayout/Testimonials'
 
 const LandingPage = () => {
     return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
             <Venue />
             <Service />
             <Portfolio />
+            <Testimonials />
             <Footer />
         </div >
     )
