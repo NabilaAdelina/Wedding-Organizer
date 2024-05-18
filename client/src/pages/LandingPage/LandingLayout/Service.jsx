@@ -6,7 +6,7 @@ const Service = () => {
     return (
 
         <section className='h-[547px] mt-[60px] flex justify-center items-center' style={{
-            backgroundImage: `url(${bgservice})`, backgroundSize: '100% auto'
+            backgroundImage: `url(${bgservice})`, backgroundSize: 'cover'
         }}>
             <div className='w-[1100px] bg-neutral1 py-3 rounded-lg flex mt-14'>
                 <div className="px-8 py-6">
@@ -14,9 +14,9 @@ const Service = () => {
                     <p className='text-neutral3 text-[16px] w-[214px]'>to plan and orchestrate your special occasion</p>
                 </div>
                 <div className='grid grid-cols-3 gap-3 px-8'>
-                    <ServiceCard name="Photo" url={service1} />
-                    <ServiceCard name="Photo" url={service1} />
-                    <ServiceCard name="Photo" url={service1} />
+                    <ServiceCard name="Photography" url={service1} />
+                    <ServiceCard name="Photography" url={service1} />
+                    <ServiceCard name="Photography" url={service1} />
                 </div>
             </div>
         </section>

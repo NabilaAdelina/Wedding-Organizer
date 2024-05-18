@@ -47,15 +47,15 @@ const Venue = () => {
                         url={location1}
                     />
                     <Location
-                        name="Florence"
-                        url={location1}
+                        name="Browse more"
+                        bgcolor="bg-neutral4"
                     />
                 </div>
                 <div>
                     <h1 className='font-semibold mb-3'>Featured venues</h1>
                     <div className='flex'>
                         <img src={featured} alt="" />
-                        <div className='bg-neutral4 px-[48px] py-[32px] w-[679px] flex flex-col justify-center'>
+                        <div className='bg-neutral4 px-[48px] py-[32px] w-[679px] flex flex-col justify-center rounded-r-lg'>
                             <p className='font-boska font-bold text-[32px] text-primary2'>Villa Balbianello</p>
                             <p className='text-primary5 font-semibold text-[14px] mb-4'>Lake Como</p>
                             <div className='flex flex-col gap-4'>
