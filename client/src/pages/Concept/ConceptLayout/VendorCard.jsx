@@ -12,7 +12,7 @@ const VendorCard = (props) => {
                 </div>
             </div>
             <div>
-                <p className='font-boska mt-3 font-bold text-[16px] text-primary4'>{deskripsi}</p>
+                <p className='font-switzer mt-8 text-center text-[16px] text-primary4'>{deskripsi}</p>
             </div>
         </div>
         </>

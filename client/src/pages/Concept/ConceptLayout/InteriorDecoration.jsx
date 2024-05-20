@@ -11,7 +11,7 @@ const InteriorDecoration = () => {
     <section className='flex flex-col items-center px-[200px] pt-[100px] gap-[50px] mb-5'>
     <div className='text-left mb-4'>
       <h1 className='text-[60px] font-boska font-bold text-neutral4'>Interior & Decoration</h1>
-      <div className='grid grid-cols-2 gap-10'>
+      <div className='grid grid-cols-2 gap-10 w-[950px]'>
         <InteriorDecorationCard 
         name="Altar 1" url={altar1}
         />
