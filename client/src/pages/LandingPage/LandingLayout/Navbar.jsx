@@ -30,7 +30,7 @@ const Navbar = () => {
                     })}
                 </ul>
                 <div className='flex gap-5'>
-                    <button>Sign</button>
+                    <Link to={"/user/profile"}>Sign</Link>
                     <button>Login</button>
                 </div>
             </div>
