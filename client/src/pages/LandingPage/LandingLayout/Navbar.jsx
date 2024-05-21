@@ -3,7 +3,7 @@ import logo2 from "../../../assets/logo/logo2.png";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const [isLogin, setIsLogin] = useState(true);
+    const [isLogin, setIsLogin] = useState(false);
 
     const linkNav = [
         { id: 1, name: "Concept", path: "/concept" },

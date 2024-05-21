@@ -1,3 +1,4 @@
+import AfterFormReq from "./pages/FormReq/AfterFormReq"
 import FormReq from "./pages/FormReq/FormReq"
 import LandingPage from "./pages/LandingPage/LandingPage"
 import { Routes, Route } from "react-router-dom"
@@ -12,6 +13,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
+        <Route path="aform" element={<AfterFormReq />}></Route>
         <Route path='user/profile' element={<Profile />} />
         <Route path='user/setting' element={<Setting />} />
         <Route path="form" element={<FormReq />}></Route>
