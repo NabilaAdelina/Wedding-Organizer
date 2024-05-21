@@ -1,6 +1,7 @@
-import React from 'react'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+import React from 'react';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { Link } from 'react-router-dom';
 
 const Request = () => {
     return (
@@ -38,9 +39,9 @@ const Request = () => {
                             style={{ height: '300px' }}
                         />
                     </div>
-                    <button type="submit" className="w-full h-[93px] bg-zinc-500 text-white text-[25px] font-medium font-['Switzer'] leading-normal tracking-wide rounded-[14px] px-6 py-3 mt-6">
+                    <Link to="/Aform" className="w-full h-[93px] bg-zinc-500 text-white text-[25px] font-medium font-['Switzer'] leading-normal tracking-wide rounded-[14px] px-6 py-3 mt-6 text-center flex items-center justify-center">
                         Submit
-                    </button>
+                    </Link>
                 </form>
                 <div className="w-full max-w-[1289px] px-4 text-left mb-12">
                     <div className="text-neutral-700 text-xl font-bold font-['Switzer'] underline leading-normal tracking-wide">
@@ -50,7 +51,7 @@ const Request = () => {
             </div>
             <Footer />
         </>
-    )
+    );
 }
 
-export default Request
+export default Request;
