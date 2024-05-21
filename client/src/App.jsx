@@ -1,3 +1,4 @@
+import AfterFormReq from "./pages/FormReq/AfterFormReq"
 import FormReq from "./pages/FormReq/FormReq"
 import LandingPage from "./pages/LandingPage/LandingPage"
 import { Routes, Route } from "react-router-dom"
