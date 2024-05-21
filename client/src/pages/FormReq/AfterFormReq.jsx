@@ -43,7 +43,7 @@ const AfterFormReq = () => {
                 <div className="w-full max-w-[1289px] px-4 mb-12 flex justify-end">
                     <Link to="/" className="bg-zinc-500 text-white text-[20px] font-medium font-Switzer leading-normal tracking-wide rounded-[8px] px-6 py-3">
                         Ajukan Perubahan
-                    </Link>                    
+                    </Link>
                 </div>
             </div>
             <Footer />
