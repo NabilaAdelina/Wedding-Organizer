@@ -7,8 +7,8 @@ const Request = () => {
         <>
             <Header />
             <div className="anggaran w-full bg-white p-6 pt-16 pb-16">
-                <div className="relative bg-stone-400 p-6 rounded-lg w-full">
-                    <div className="RincianAnggaran text-center text-slate-700 text-6xl font-bold font-['Boska'] leading-10 tracking-widest">
+                <div className="relative bg-primary1 p-6 rounded-lg w-full">
+                    <div className="RincianAnggaran text-center text-neutral5 text-6xl font-bold font-['Boska'] leading-10 tracking-widest">
                         Rincian Anggaran
                     </div>
                     <div className="mt-6 overflow-x-auto">
@@ -91,10 +91,10 @@ const Request = () => {
                     </div>
                 </div>
 
-                <div className="bg-stone-400 p-6 mt-6 rounded-lg w-full">
+                <div className="bg-primary1 p-6 mt-6 rounded-lg w-full">
                     <div className="tooltip flex flex-col items-start p-4 bg-white rounded-lg shadow-lg">
                         <div className="text-section mb-4">
-                            <h2 className="text-4xl font-bold text-slate-700">Catatan:</h2>
+                            <h2 className="text-4xl font-['Boska'] font-bold text-neutral5">Catatan:</h2>
                             <p className="text-neutral-400 text-base font-medium">
                                 Anggaran dapat dilakukan perubahan dengan mengajukan permohonan melalui platform yang tersedia. Sertakan dengan jelas alokasi dana yang diinginkan dan berikan alasan perubahan. Jawaban terkait pertanyaan rincian anggaran yang kurang dipahami akan kami tambahkan pada tabel yang tersedia.
                             </p>

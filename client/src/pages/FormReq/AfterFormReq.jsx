@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 import { Link } from 'react-router-dom';
 
 
-const Request = () => {
+const AfterFormReq = () => {
     return (
         <>
             <Header />
@@ -51,4 +51,4 @@ const Request = () => {
     );
 };
 
-export default Request;
+export default AfterFormReq;
