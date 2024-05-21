@@ -3,7 +3,7 @@ const VendorCard = (props) => {
     return (
         <>
         <div>
-            <div className='w-[350px] h-[300px] flex justify-center items-end pb-5' style={{
+            <div className='w-[350px] h-[300px] flex justify-center items-center pb-5' style={{
                 backgroundImage: `url(${url})`, backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
             }}>

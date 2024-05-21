@@ -8,8 +8,7 @@ const KonsepAcara = () => {
             <div>
                 <div className=' flex w-auto'>
                     <div>
-                    <img className='rounded-3xl' src=".\src\assets\images\bg-konsep.png" alt="" />
-                    <h1> Documentation Concept</h1>
+                    <img className='rounded-3xl' src=".\src\assets\images\bg-konsep.png" alt="Wedding Documentation" />
                     </div>
                 </div>
                 <div className='mt-[100px]'>
@@ -18,7 +17,7 @@ const KonsepAcara = () => {
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 9L9 1m0 0H1m8 0V9"/>
                         </svg>
                     </a>
-                    <h1 className='text-[42px] font-boska text-neutral4 font-bold'>Konsep Acara</h1>
+                    <h1 className='text-[60px] font-boska text-neutral4 font-bold'>Konsep Acara</h1>
                 </div>
                 <div>
                     <p className='font-switzer text-neutral3 text-[16px]'>
