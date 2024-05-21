@@ -39,7 +39,7 @@ const Request = () => {
                             style={{ height: '300px' }}
                         />
                     </div>
-                    <Link to="/Aform" className="w-full h-[93px] bg-zinc-500 text-white text-[25px] font-medium font-['Switzer'] leading-normal tracking-wide rounded-[14px] px-6 py-3 mt-6 text-center flex items-center justify-center">
+                    <Link to="/aform" className="w-full h-[93px] bg-zinc-500 text-white text-[25px] font-medium font-['Switzer'] leading-normal tracking-wide rounded-[14px] px-6 py-3 mt-6 text-center flex items-center justify-center">
                         Submit
                     </Link>
                 </form>
