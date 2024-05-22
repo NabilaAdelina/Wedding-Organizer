@@ -10,9 +10,15 @@ const DetailAcara = () => {
                 <div className="px-10 py-8">
                     <h1 className='text-[42px] font-boska text-neutral4 font-bold'>Detail Acara:</h1>
                     <div>
-                        <p className='font-switzer text-neutral3 text-[16px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde temporibus iure officiis ipsam doloribus nisi vero! Dolore, reprehenderit aliquid ducimus dolorum omnis, fugiat dicta, natus earum atque dignissimos itaque!
+                        <p className='font-switzer text-neutral3 text-[16px]'>
+                        Dalam perayaan pernikahan, kami telah memilih konsep yang menggabungkan sentuhan elegan dan romantis dengan nuansa alam yang  hangat. 
+Acara akan dilangsungkan di sebuah kebun yang luas, didekorasi dengan rangkaian bunga segar, lampu-lampu hias, dan elemen-elemen kayu yang memberikan sentuhan rustic. 
+Tema warna kami adalah putih bersih, krem, dan nuansa emas yang hangat, menciptakan atmosfer yang anggun dan berkelas. 
+Kami akan memulai hari pernikahan kami dengan upacara di bawah tenda dengan latar belakang pemandangan alam yang indah, dihiasi dengan rangkaian bunga segar dan hiasan dedaunan.
                         <br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut modi amet quisquam perspiciatis. Repudiandae, reiciendis earum cupiditate beatae, ut ullam aperiam labore rerum dignissimos minus in quia reprehenderit officia aut.</p>
+                        Setelah itu, tamu akan diundang untuk menikmati pesta resepol di lapangan terbuka, di mana kami akan menyajikan hidangan lezat dari catering terbaik dan menampilkan hiburan live dari band favorit kami. 
+Detall-detail kecil seperti tempat duduk yang nyaman, meja makan yang indah, dan pencahayaan yang hangat akan menambahkan sentuhan khusus pada perayaan kami, Dengan konsep ini, kami berharap untuk menciptakan pengalaman pernikahan yang tak terlupakan bagi kami dan semua tamu yang hadir.
+                        </p>
                     </div>
                     <div>
                         <br />
