@@ -29,7 +29,7 @@ const Header = () => {
                     })}
                 </ul>
                 <div className='flex gap-5'>
-                    <Link className='text-primary3'>My profile</Link>
+                    <Link to={"/user/profile"} className='text-primary3'>My profile</Link>
                 </div>
             </div>
         </header>

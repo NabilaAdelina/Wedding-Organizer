@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import heroimg from "../../../assets/images/hero-img.png"
 import arrow from "../../../assets/logo/arrow-bottom.svg"
 import { Link } from 'react-router-dom'
+import { Context } from '../LandingPage'
 const Hero = () => {
-    const [isLogin, setIsLogin] = useState(true)
+    const { isLogin, setIslogin } = useContext(Context);
     return (
         <section className='h-[872px] bg-contain flex justify-center items-center' style={{
             backgroundImage: `url(${heroimg})`, backgroundSize: 'cover',

@@ -1,6 +1,8 @@
 import bgservice from "../../../assets/images/bg-service.png"
 import ServiceCard from "./ServiceCard"
 import service1 from "../../../assets/images/service1.png"
+import service2 from "../../../assets/images/service2.png"
+import service3 from "../../../assets/images/service3.png"
 
 const Service = () => {
     return (
@@ -15,8 +17,8 @@ const Service = () => {
                 </div>
                 <div className='grid grid-cols-3 gap-3 px-8'>
                     <ServiceCard name="Photography" url={service1} />
-                    <ServiceCard name="Photography" url={service1} />
-                    <ServiceCard name="Photography" url={service1} />
+                    <ServiceCard name="Ceremony" url={service2} />
+                    <ServiceCard name="Wedding Design" url={service3} />
                 </div>
             </div>
         </section>

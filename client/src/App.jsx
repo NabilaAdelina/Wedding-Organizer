@@ -19,16 +19,14 @@ function App() {
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="/profile" element={<SettingProfile />}></Route>
         <Route path="/form" element={<FormReq />}></Route>
-        <Route path="/Aform" element={<AfterFormReq />}></Route>
-        <Route path="/rincian" element={<RincianAnggaran />}></Route>
+        <Route path="/costplan" element={<RincianAnggaran />}></Route>
         <Route path="aform" element={<AfterFormReq />}></Route>
         <Route path='user/profile' element={<Profile />} />
         <Route path='user/setting' element={<Setting />} />
-        <Route path="form" element={<FormReq />}></Route>
         <Route path="signup" element={<SignUp />}></Route>
         <Route path="login" element={<Login />}></Route>
         <Route path="/concept" element={<Concept />}></Route>
-        <Route path="/Schedule" element={<Schedule />}></Route>
+        <Route path="/schedule" element={<Schedule />}></Route>
       </Routes>
     </>
   )

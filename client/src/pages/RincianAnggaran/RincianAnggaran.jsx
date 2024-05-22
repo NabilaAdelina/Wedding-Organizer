@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-const Request = () => {
+const RincianAnggaran = () => {
     return (
         <>
             <Header />
@@ -115,4 +115,4 @@ const Request = () => {
     );
 };
 
-export default Request;
+export default RincianAnggaran;
