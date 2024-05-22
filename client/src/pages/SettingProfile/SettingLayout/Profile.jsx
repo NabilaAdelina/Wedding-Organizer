@@ -32,17 +32,17 @@ const Profile = () => {
                                     <input type="text" className='rounded-[8px]' />
                                 </div>
                                 <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">Nama Lengkap</label>
+                                    <label htmlFor="">Alamat Email</label>
                                     <input type="text" className='rounded-[8px]' />
                                 </div>
                             </div>
                             <div className='flex flex-col gap-[32px]'>
                                 <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">Nama Lengkap</label>
+                                    <label htmlFor="">Negara</label>
                                     <input type="text" className='rounded-[8px]' />
                                 </div>
                                 <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">Nama Lengkap</label>
+                                    <label htmlFor="">Kode Pos</label>
                                     <input type="text" className='rounded-[8px]' />
                                 </div>
                             </div>

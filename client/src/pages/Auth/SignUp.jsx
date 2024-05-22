@@ -1,4 +1,4 @@
-import FormAuth from './LayoutAuth/FormAuth'
+import FormAuth from './AuthLayout/FormAuth'
 const SignUp = () => {
     return (
         <FormAuth
