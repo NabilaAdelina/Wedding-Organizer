@@ -1,5 +1,8 @@
 import PortfolioCard from "./PortfolioCard"
 import portfolio1 from "../../../assets/images/portfolio1.png"
+import portfolio2 from "../../../assets/images/portfolio2.png"
+import portfolio3 from "../../../assets/images/portfolio3.png"
+import portfolio4 from "../../../assets/images/portfolio4.png"
 
 const Portfolio = () => {
     return (
@@ -12,16 +15,16 @@ const Portfolio = () => {
                         url={portfolio1}
                     />
                     <PortfolioCard
-                        name="Joy & Jordan"
-                        url={portfolio1}
+                        name="Dianne & Michael"
+                        url={portfolio2}
                     />
                     <PortfolioCard
-                        name="Joy & Jordan"
-                        url={portfolio1}
+                        name="Gabrielle & Simon"
+                        url={portfolio3}
                     />
                     <PortfolioCard
-                        name="Joy & Jordan"
-                        url={portfolio1}
+                        name="Zee & Adrian"
+                        url={portfolio4}
                     />
                 </div>
             </div>

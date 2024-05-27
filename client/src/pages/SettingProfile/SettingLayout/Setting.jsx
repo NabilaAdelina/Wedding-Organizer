@@ -25,11 +25,11 @@ const Setting = () => {
                                 <div className='flex mb-5'>
                                     <div className='flex gap-[52px]'>
                                         <div className='flex flex-col w-[260px] gap-[10px]'>
-                                            <label htmlFor="">Nama Lengkap</label>
+                                            <label htmlFor="">Kata Sandi</label>
                                             <input type="text" className='rounded-[8px]' />
                                         </div>
                                         <div className='flex flex-col w-[260px] gap-[10px]'>
-                                            <label htmlFor="">Nama Lengkap</label>
+                                            <label htmlFor="">Kata Sandi Sekarang</label>
                                             <input type="text" className='rounded-[8px]' />
                                         </div>
                                     </div>
