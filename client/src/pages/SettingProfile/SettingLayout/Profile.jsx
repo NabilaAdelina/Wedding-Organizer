@@ -38,7 +38,7 @@ const Profile = () => {
                             </div>
                             <div className='flex flex-col gap-[32px]'>
                                 <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">Negara</label>
+                                    <label htmlFor="">Nomer Handphone</label>
                                     <input type="text" className='rounded-[8px]' />
                                 </div>
                                 <div className='flex flex-col w-[260px] gap-[10px]'>
