@@ -42,8 +42,8 @@ const RincianAdmin = () => {
                     </div>
                 </aside>
                 <main className="flex-1 p-4">
-                    <h1 className="text-center text-zinc-800 text-3xl font-bold">Rincian Anggaran</h1>
-                    <p className="text-center text-zinc-800 text-base">Pilih Pelanggan</p>
+                    <h1 className="text-left text-zinc-800 text-4xl font-bold font-['Boska']">Rincian Anggaran</h1>
+                    <p className="text-left text-zinc-800 text-base">Pilih Pelanggan</p>
                     <div className="mt-6 overflow-x-auto">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg">
                             <thead>

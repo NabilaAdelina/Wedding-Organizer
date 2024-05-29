@@ -10,6 +10,8 @@ import Profile from "./pages/SettingProfile/SettingLayout/Profile"
 import Setting from "./pages/SettingProfile/SettingLayout/Setting"
 import SignUp from "./pages/Auth/SignUp"
 import Login from "./pages/Auth/Login"
+import RincianAdmin2 from "./pages/Admin/RincianAnggaran/RincianAdmin2"
+import FormRA from "./pages/Admin/RincianAnggaran/FormRA"
 
 function App() {
 
@@ -26,7 +28,9 @@ function App() {
         <Route path="login" element={<Login />}></Route>
         <Route path="/concept" element={<Concept />}></Route>
         <Route path="/schedule" element={<Schedule />}></Route>
-        <Route path="/rincianAdmin" element={<RincianAdmin />}></Route>
+        <Route path="/RA1" element={<RincianAdmin />}></Route>
+        <Route path="/RA2" element={<RincianAdmin2 />}></Route>
+        <Route path="/FormRA" element={<FormRA />}></Route>
       </Routes>
     </>
   )
