@@ -1,4 +1,5 @@
 import AfterFormReq from "./pages/FormReq/AfterFormReq"
+import RincianAdmin from "./pages/Admin/RincianAnggaran/RincianAdmin"
 import FormReq from "./pages/FormReq/FormReq"
 import LandingPage from "./pages/LandingPage/LandingPage"
 import { Routes, Route } from "react-router-dom"
@@ -25,6 +26,7 @@ function App() {
         <Route path="login" element={<Login />}></Route>
         <Route path="/concept" element={<Concept />}></Route>
         <Route path="/schedule" element={<Schedule />}></Route>
+        <Route path="/rincianAdmin" element={<RincianAdmin />}></Route>
       </Routes>
     </>
   )
