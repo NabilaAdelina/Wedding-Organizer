@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const RincianAdmin = () => {
+const RincianAdmin2 = () => {
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col">
             <nav className="bg-neutral-700 p-4 flex justify-between items-center">
@@ -112,4 +112,4 @@ const RincianAdmin = () => {
     );
 };
 
-export default RincianAdmin;
+export default RincianAdmin2;
