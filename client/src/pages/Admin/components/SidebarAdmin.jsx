@@ -39,10 +39,10 @@ const SidebarAdmin = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-4'>
-                <div className='flex gap-3 px-[10px]'>
+                <NavLink to={'/admin/profile'} className='flex gap-3 px-[10px]'>
                     <img className='w-4' src={setting} alt="Setting" />
                     <p className='text-neutral3'>Settings</p>
-                </div>
+                </NavLink>
                 <div className='flex gap-3 px-[10px]'>
                     <img className='w-4' src={logout} alt="Logout" />
                     <p className='text-[#D55F5A] text-[14px]'>Keluar Akun</p>
