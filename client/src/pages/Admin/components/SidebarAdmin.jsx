@@ -5,13 +5,12 @@ import profile from '../../../assets/images/profile-admin.png'
 import { NavLink } from 'react-router-dom'
 
 const SidebarAdmin = () => {
-
     return (
-        <div className='fixed z-10 px-8 pb-10 pt-14 left-0 bottom-0 top-0 border-r border-neutral2 bg-white flex flex-col justify-between w-[280px]'>
+        <div className='px-8 pb-10 pt-14 border-r border-neutral2 bg-white flex flex-col justify-between w-[280px]'>
             <div className='pt-20'>
                 <div className='flex flex-col gap-[20px] '>
                     <div className='flex gap-3 items-center'>
-                        <img src={profile} alt="" />
+                        <img src={profile} alt="Profile" />
                         <p className='font-medium text-neutral4 text-[20px]'>Gustavo</p>
                     </div>
                     <div className='flex flex-col justify-between'>
@@ -45,12 +44,12 @@ const SidebarAdmin = () => {
                     <p className='text-neutral3'>Settings</p>
                 </div>
                 <div className='flex gap-3 px-[10px]'>
-                    <img className='w-4' src={logout} alt="Setting" />
+                    <img className='w-4' src={logout} alt="Logout" />
                     <p className='text-[#D55F5A] text-[14px]'>Keluar Akun</p>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default SidebarAdmin
+export default SidebarAdmin;
