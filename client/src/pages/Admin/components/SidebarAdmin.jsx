@@ -1,7 +1,9 @@
-import profileIcon from '../../../assets/logo/profile-icon.svg'
 import setting from '../../../assets/logo/setting-icon.svg'
 import logout from '../../../assets/icons/logout-icon.svg'
 import profile from '../../../assets/images/profile-admin.png'
+import schedule from '../../../assets/icons/schedule-icon.svg'
+import costplan from '../../../assets/icons/costplan-icon.svg'
+import concept from '../../../assets/icons/concept-icon.svg'
 import { NavLink } from 'react-router-dom'
 
 const SidebarAdmin = () => {
@@ -18,21 +20,21 @@ const SidebarAdmin = () => {
                             to="/dashboard/concept"
                             className={({ isActive }) => isActive ? 'p-[10px] flex gap-3 text-gray-700' : 'p-[10px] flex gap-3 text-neutral3'}
                         >
-                            <img className='w-5' src={profileIcon} alt="Profile" />
+                            <img className='w-5' src={concept} alt="Profile" />
                             <p>Concept</p>
                         </NavLink>
                         <NavLink
                             to="/dashboard/costplan"
                             className={({ isActive }) => isActive ? 'p-[10px] flex gap-3 text-gray-700' : 'p-[10px] flex gap-3 text-neutral3'}
                         >
-                            <img className='w-5' src={setting} alt="Setting" />
+                            <img className='w-5' src={costplan} alt="CostPlan" />
                             <p>Costplan</p>
                         </NavLink>
                         <NavLink
                             to="/dashboard/schedule"
                             className={({ isActive }) => isActive ? 'p-[10px] flex gap-3 text-gray-700' : 'p-[10px] flex gap-3 text-neutral3'}
                         >
-                            <img className='w-5' src={setting} alt="Setting" />
+                            <img className='w-5' src={schedule} alt="Schedule" />
                             <p>Schedule</p>
                         </NavLink>
                     </div>
