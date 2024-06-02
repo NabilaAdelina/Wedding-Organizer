@@ -4,7 +4,7 @@ import { Carousel } from 'flowbite-react'
 const WeddingDress = () => {
     return (
         <>
-            <section className='flex flex-col bg-primary1 items-center p-auto'>
+            <section className='flex flex-col mt-[80px] bg-primary1 items-center p-auto'>
                 <div className='flex flex-row m-[150px] px-[200px]'>
                     <div className='grid grid-cols-1 mr-10 align-middle gap-5'>
                             <img className='rounded-lg w-[150px]' src="./src/assets/images/wed-dress.png" alt="Wedding Dress" />
