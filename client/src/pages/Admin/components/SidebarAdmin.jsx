@@ -4,6 +4,7 @@ import profile from '../../../assets/images/profile-admin.png'
 import schedule from '../../../assets/icons/schedule-icon.svg'
 import costplan from '../../../assets/icons/costplan-icon.svg'
 import concept from '../../../assets/icons/concept-icon.svg'
+import request from '../../../assets/icons/request-icon.svg'
 import { NavLink } from 'react-router-dom'
 
 const SidebarAdmin = () => {
@@ -16,6 +17,13 @@ const SidebarAdmin = () => {
                         <p className='font-medium text-neutral4 text-[20px]'>Gustavo</p>
                     </div>
                     <div className='flex flex-col justify-between'>
+                        <NavLink
+                            to="/dashboard/request"
+                            className={({ isActive }) => isActive ? 'p-[10px] flex gap-3 text-gray-700' : 'p-[10px] flex gap-3 text-neutral3'}
+                        >
+                            <img className='w-5' src={request} alt="Request" />
+                            <p>Request</p>
+                        </NavLink>
                         <NavLink
                             to="/dashboard/concept"
                             className={({ isActive }) => isActive ? 'p-[10px] flex gap-3 text-gray-700' : 'p-[10px] flex gap-3 text-neutral3'}
