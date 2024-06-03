@@ -5,7 +5,7 @@ import VendorMenu from './DashboardLayout/Vendor Acara/VendorMenu'
 import Pakaian from './DashboardLayout/Pakaian/PakaianMenu'
 import SidebarAdmin from '../../pages/Admin/components/SidebarAdmin'
 import NavbarAdmin from '../../pages/Admin/components/NavbarAdmin'
-import KonsepMenu from './DashboardLayout/Konsep Acara/KonsepMenu'
+
 
 const Dashboard = () => {
     return (
@@ -18,7 +18,7 @@ const Dashboard = () => {
                     <ClientName />
                     <VendorMenu />
                     <Pakaian />
-                    <KonsepMenu />
+
                 </div>
             </div>
             <Footer />
