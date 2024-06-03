@@ -12,7 +12,6 @@ import Login from "./pages/Auth/Login"
 import CostPlan from "./pages/Admin/CostPlan/CostPlan"
 import RincianAdmin2 from "./pages/Admin/RincianAnggaran/RincianAdmin2"
 import RincianAdmin from "./pages/Admin/RincianAnggaran/RincianAdmin"
-import FormRA from "./pages/Admin/RincianAnggaran/FormRA"
 import AdminProfile from "./pages/Admin/AdminSetting/AdminProfile"
 import AdminSetting from "./pages/Admin/AdminSetting/AdminSetting"
 
@@ -36,7 +35,6 @@ function App() {
         <Route path="dashboard/costplan" element={<CostPlan />}></Route>
         <Route path="/RA1" element={<RincianAdmin />}></Route>
         <Route path="/RA2" element={<RincianAdmin2 />}></Route>
-        <Route path="/FormRA" element={<FormRA />}></Route>
         <Route path='admin/profile' element={<AdminProfile />} />
         <Route path='admin/setting' element={<AdminSetting />} />
       </Routes>
