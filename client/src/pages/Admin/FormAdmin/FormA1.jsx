@@ -10,7 +10,7 @@ const FormA1 = () => {
             <div className="flex flex-1">
                 <SidebarAdmin />
                 <main className="flex-1 p-12 ml-[0px] mt-[80px] mb-[64px]">
-                    <h1 className="text-left text-zinc-800 text-4xl font-bold font-['Boska']">Rincian Anggaran</h1>
+                    <h1 className="text-left text-zinc-800 text-4xl font-bold font-['Boska']">Form Request</h1>
                     <p className="text-left text-zinc-800 text-base">Pilih Pelanggan</p>
                     <div className="mt-6 overflow-x-auto flex-1">
                         <table className="min-w-full bg-white border border-gray-200 rounded-lg">
