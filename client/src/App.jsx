@@ -10,6 +10,12 @@ import Profile from "./pages/SettingProfile/SettingLayout/Profile"
 import Setting from "./pages/SettingProfile/SettingLayout/Setting"
 import SignUp from "./pages/Auth/SignUp"
 import Login from "./pages/Auth/Login"
+import CostPlan from "./pages/Admin/CostPlan/CostPlan"
+import RincianAdmin2 from "./pages/Admin/RincianAnggaran/RincianAdmin2"
+import RincianAdmin from "./pages/Admin/RincianAnggaran/RincianAdmin"
+import FormRA from "./pages/Admin/RincianAnggaran/FormRA"
+import AdminProfile from "./pages/Admin/AdminSetting/AdminProfile"
+import AdminSetting from "./pages/Admin/AdminSetting/AdminSetting"
 
 function App() {
 
@@ -26,7 +32,15 @@ function App() {
         <Route path="login" element={<Login />}></Route>
         <Route path="/concept" element={<Concept />}></Route>
         <Route path="/schedule" element={<Schedule />}></Route>
-        <Route path="/dashboard" element={<Dashboard />}></Route>
+
+
+        <Route path="dashboard/costplan" element={<CostPlan />}></Route>
+        <Route path="/RA1" element={<RincianAdmin />}></Route>
+        <Route path="/RA2" element={<RincianAdmin2 />}></Route>
+        <Route path="/FormRA" element={<FormRA />}></Route>
+        <Route path='admin/profile' element={<AdminProfile />} />
+        <Route path='admin/setting' element={<AdminSetting />} />
+        <Route path="/dashboard/concept" element={<Dashboard />}></Route>
       </Routes>
     </>
   )

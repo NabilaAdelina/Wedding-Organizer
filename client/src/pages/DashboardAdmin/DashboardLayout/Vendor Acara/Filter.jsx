@@ -8,7 +8,7 @@ const Filter = ({ onFilter }) => {
 
     return (
         <div>
-        <button className=" text-black px-4 py-2 rounded-lg flex items-center">
+        <button className=" text-black h-10 px-4 py-2 rounded-lg flex items-center">
             
             <select onChange={handleFilterChange} className=" border  rounded text-black px-2 py-1 outline-none">
             <option value="">

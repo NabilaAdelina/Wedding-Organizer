@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import { Link } from 'react-router-dom';
-
 
 const AfterFormReq = () => {
+    const [popUp, SetPopup] = useState(false);
+
+    const PopUpForm = () => {
+        return (
+            <div className='absolute left-0 right-0 top-0 bottom-0 bg-black bg-opacity-70 h-full flex justify-center items-center'>
+                <div className='bg-neutral1 p-8 rounded-[8px] w-[772px] flex flex-col gap-5'>
+                    <p className='font-medium text-neutral5'>Apa yang ingin anda ubah?</p>
+                    <textarea className='rounded-xl h-[160px] mb-2' name="" id="" placeholder='Tulis konsep awal pernikahan yang anda inginkan, sertakan juga tanggal hari H dan kasaran budget anda!'></textarea>
+                    <div className='flex justify-end gap-2'>
+                        <button className='bg-neutral2 px-[18px] py-[9px] rounded-md text-neutral5 font-semibold' onClick={() => { SetPopup(false) }}>Batal</button>
+                        <button className='bg-primary1 px-[18px] py-[9px] rounded-md text-primary5 font-semibold'>Simpan</button>
+                    </div>
+                </div>
+            </div>
+        )
+    }
     return (
-        <>
+        <div className='relative'>
             <Header />
-            <div className="min-h-screen flex flex-col items-center justify-center bg-white">
+            <div className="min-h-screen flex flex-col items-center justify-center">
                 <div className="text-center mb-12 mt-12">
                     <div className="text-neutral-700 text-[55px] font-bold font-['Boska'] leading-normal tracking-widest mb-4">Form Planning</div>
                     <div className="text-neutral-400 text-2xl font-normal font-Switzer leading-normal tracking-wide mb-4">Thank you for filling out the form. Here is the information you provided:</div>
@@ -41,13 +55,18 @@ const AfterFormReq = () => {
                     </table>
                 </div>
                 <div className="w-full max-w-[1289px] px-4 mb-12 flex justify-end">
-                    <Link to="/" className="bg-zinc-500 text-white text-[20px] font-medium font-Switzer leading-normal tracking-wide rounded-[8px] px-6 py-3">
+                    <button onClick={() => {
+                        SetPopup(true)
+                    }} className="bg-zinc-500 text-white text-[20px] font-medium font-Switzer leading-normal tracking-wide rounded-[8px] px-6 py-3">
                         Ajukan Perubahan
-                    </Link>
+                    </button>
                 </div>
             </div>
+            {
+                popUp && <PopUpForm />
+            }
             <Footer />
-        </>
+        </div>
     );
 };
 

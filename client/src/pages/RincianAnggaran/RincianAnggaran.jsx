@@ -1,14 +1,15 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import bgservice from "../../assets/images/bg-service.png"
 
 const RincianAnggaran = () => {
     return (
         <>
             <Header />
-            <div className="anggaran w-full bg-white p-6 pt-16 pb-16">
-                <div className="relative bg-primary1 p-6 rounded-lg w-full">
-                    <div className="RincianAnggaran text-center text-neutral5 text-6xl font-bold font-['Boska'] leading-10 tracking-widest">
+            <div className="anggaran w-full bg-white p-0 pt-16 pb-16">
+                <div className="relative bg-primary1 p-20 w-full">
+                    <div className="RincianAnggaran text-center text-neutral5 text-6xl font-bold font-['Boska'] leading-100 tracking-widest">
                         Rincian Anggaran
                     </div>
                     <div className="mt-6 overflow-x-auto">
@@ -91,24 +92,28 @@ const RincianAnggaran = () => {
                     </div>
                 </div>
 
-                <div className="bg-primary1 p-6 mt-6 rounded-lg w-full">
-                    <div className="tooltip flex flex-col items-start p-4 bg-white rounded-lg shadow-lg">
-                        <div className="text-section mb-4">
-                            <h2 className="text-4xl font-['Boska'] font-bold text-neutral5">Catatan:</h2>
-                            <p className="text-neutral-400 text-base font-medium">
-                                Anggaran dapat dilakukan perubahan dengan mengajukan permohonan melalui platform yang tersedia. Sertakan dengan jelas alokasi dana yang diinginkan dan berikan alasan perubahan. Jawaban terkait pertanyaan rincian anggaran yang kurang dipahami akan kami tambahkan pada tabel yang tersedia.
-                            </p>
-                        </div>
-                        <div className="action-section flex items-center gap-2">
-                            <button className="text-blue-600 text-base font-semibold">Ajukan Perubahan</button>
-                            <div className="icon rotate-45">
-                                <div className="w-4 h-4 flex justify-center items-center">
-                                    <div className="icon-outline-arrow-right"></div>
-                                </div>
+                <section className='h-[547px] flex justify-center items-center mt-20' style={{
+                    backgroundImage: `url(${bgservice})`, backgroundSize: 'cover'
+                }}>
+                    <div className='w-[1000px] bg-neutral1 shadow-inner py-3 flex m-auto'>
+                        <div className="px-10 py-8">
+                            <h2 className='text-[42px] font-boska text-neutral4 font-bold'>Catatan:</h2>
+                            <div>
+                                <p className='font-switzer text-neutral3 text-[16px]'>
+                                    Anggaran dapat dilakukan perubahan dengan mengajukan permohonan melalui platform yang tersedia. Sertakan dengan jelas alokasi dana yang diinginkan dan berikan alasan perubahan. Jawaban terkait pertanyaan rincian anggaran yang kurang dipahami akan kami tambahkan pada tabel yang tersedia.
+                                </p>
+                            </div>
+                            <div>
+                                <br />
+                                <a href="#" className="flex float-right text-[16px] font-switzer font-bold text-blue-500">Ajukan perubahan 
+                                    <svg className="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10">
+                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 9L9 1m0 0H1m8 0V9"/>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
             <Footer />
         </>

@@ -6,7 +6,7 @@ const SearchBar = ({ onSearch }) => {
         <input
         type="text"
         placeholder="Search..."
-        className="border px-5 py-0 rounded-lg"
+        className="border px-5 h-6 bg-gray-100 rounded"
         onChange={(e) => onSearch(e.target.value)}
         />
     );

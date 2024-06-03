@@ -3,7 +3,7 @@ import SidebarProfile from './SidebarProfile'
 import NavbarProfile from './NavbarProfile'
 import profile from '../../../assets/images/profile-medium.png'
 
-const Profile = () => {
+const AdminProfile = () => {
     return (
         <>
             <NavbarProfile />
@@ -55,4 +55,4 @@ const Profile = () => {
     )
 }
 
-export default Profile
+export default AdminProfile
