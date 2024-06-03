@@ -1,5 +1,6 @@
 import React from 'react'
 import logo3 from '../../../assets/logo/logo3.svg'
+import profile from '../../../assets/images/profile-admin.png'
 import { Link } from 'react-router-dom'
 
 const NavbarAdmin = () => {
@@ -8,7 +9,11 @@ const NavbarAdmin = () => {
             <img src={logo3} alt="" />
             <div className='flex gap-5 items-center'>
                 <div className='flex gap-5'>
-                    <Link to={"/user/profile"} className='text-primary3'>My profile</Link>
+                    <Link to={"/admin/profile"}>
+                        <div className='flex gap-3 items-center'>
+                            <img src={profile} alt="Profile" className='w-[40px]' />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </header>

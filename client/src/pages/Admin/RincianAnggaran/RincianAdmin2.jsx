@@ -7,6 +7,7 @@ const RincianAdmin2 = () => {
     const [popUp, setPopUp] = useState(false);
 
     const [formData, setFormData] = useState({
+        uraian: "",
         uraian: '',
         vol: '',
         hargaAwal: '',
@@ -16,10 +17,12 @@ const RincianAdmin2 = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData({
-            ...formData,
+        setFormData((prev) => ({
+            ...prev,
             [name]: value
-        });
+        }));
+
+        console.log(value)
     };
 
     const handleSubmit = (e) => {
@@ -27,79 +30,44 @@ const RincianAdmin2 = () => {
         console.log(formData);
     };
 
+
     const PopUpForm = () => {
         return (
-            <div className="flex items-center justify-center min-h-screen bg-black bg-opacity-50 fixed inset-0 z-50">
-                <form onSubmit={handleSubmit} className="FormRincian w-96 bg-white p-6 rounded-lg shadow-lg relative">
-                    <div className="Username mb-4 flex-col justify-start items-start gap-2 flex">
-                        <label className="InputTextLabel text-neutral-700 text-base font-semibold font-['Switzer'] leading-none" htmlFor="uraian">Uraian</label>
-                        <input
-                            id="uraian"
-                            name="uraian"
-                            type="text"
-                            value={formData.uraian}
-                            onChange={handleChange}
-                            className="InputField h-14 p-4 bg-white rounded-lg shadow border border-stone-300 flex-col justify-start items-start gap-2.5 flex"
-                            style={{ width: "calc(100% - 10px)" }} // Atur lebar input
-                        />
+            <div className='z-30 absolute left-0 right-0 top-0 bottom-0 bg-black bg-opacity-70 h-full flex justify-center items-center'>
+                <form onSubmit={handleSubmit} action="" className='bg-white p-12 rounded-xl w-[700px]'>
+                    <div>
+                        <div className='flex flex-col gap-5'>
+                            <div className='flex flex-col gap-[10px]'>
+                                <label htmlFor="" className='font-semibold text-gray-700'>Uraian</label>
+                                <input onChange={handleChange} name='uraian' type="text" className='rounded-[8px] h-[50px]' />
+                            </div>
+                            <div className='flex flex-col gap-[10px]'>
+                                <label htmlFor="" className='font-semibold text-gray-700'>Vol</label>
+                                <input onChange={handleChange} name='vol' type="text" className='rounded-[8px] h-[50px]' />
+                            </div>
+                            <div className='flex flex-col gap-[10px]'>
+                                <label htmlFor="" className='font-semibold text-gray-700'>Harga Awal</label>
+                                <input onChange={handleChange} name='hargaAwal' type="text" className='rounded-[8px] h-[50px]' />
+                            </div>
+                            <div className='flex flex-col gap-[10px]'>
+                                <label htmlFor="" className='font-semibold text-gray-700'>Jumlah</label>
+                                <input onChange={handleChange} name='jumlah' type="text" className='rounded-[8px] h-[50px]' />
+                            </div>
+                            <div className='flex flex-col gap-[10px]'>
+                                <label htmlFor="" className='font-semibold text-gray-700'>Keterangan</label>
+                                <input onChange={handleChange} name='keterangan' type="text" className='rounded-[8px] h-[50px]' />
+                            </div>
+                        </div>
                     </div>
-                    <div className="Password mb-4 flex-col justify-start items-start gap-2 flex">
-                        <label className="InputTextLabel text-neutral-700 text-base font-semibold font-['Switzer'] leading-none" htmlFor="vol">Vol</label>
-                        <input
-                            id="vol"
-                            name="vol"
-                            type="text"
-                            value={formData.vol}
-                            onChange={handleChange}
-                            className="InputField h-14 p-4 bg-white rounded-lg shadow border border-stone-300 flex-col justify-start items-start gap-2.5 flex"
-                            style={{ width: "calc(100% - 10px)" }} // Atur lebar input
-                        />
-                    </div>
-                    <div className="Password mb-4 flex-col justify-start items-start gap-2 flex">
-                        <label className="InputTextLabel text-neutral-700 text-base font-semibold font-['Noto Sans'] leading-none" htmlFor="hargaAwal">Harga Awal</label>
-                        <input
-                            id="hargaAwal"
-                            name="hargaAwal"
-                            type="text"
-                            value={formData.hargaAwal}
-                            onChange={handleChange}
-                            className="InputField h-14 p-4 bg-white rounded-lg shadow border border-stone-300 flex-col justify-start items-start gap-2.5 flex"
-                            style={{ width: "calc(100% - 10px)" }} // Atur lebar input
-                        />
-                    </div>
-                    <div className="Password mb-4 flex-col justify-start items-start gap-2 flex">
-                        <label className="InputTextLabel text-neutral-700 text-base font-semibold font-['Noto Sans'] leading-none" htmlFor="jumlah">Jumlah</label>
-                        <input
-                            id="jumlah"
-                            name="jumlah"
-                            type="text"
-                            value={formData.jumlah}
-                            onChange={handleChange}
-                            className="InputField h-14 p-4 bg-white rounded-lg border border-stone-300 flex-col justify-start items-start gap-2.5 flex"
-                            style={{ width: "calc(100% - 10px)" }} // Atur lebar input
-                        />
-                    </div>
-                    <div className="Password mb-4 flex-col justify-start items-start gap-2 flex">
-                        <label className="InputTextLabel text-neutral-700 text-base font-semibold font-['Noto Sans'] leading-none" htmlFor="keterangan">Keterangan</label>
-                        <input
-                            id="keterangan"
-                            name="keterangan"
-                            type="text"
-                            value={formData.keterangan}
-                            onChange={handleChange}
-                            className="InputField h-14 p-4 bg-white rounded-lg shadow border border-stone-300 flex-col justify-start items-start gap-2.5 flex"
-                            style={{ width: "calc(100% - 10px)" }} // Atur lebar input
-                        />
-                    </div>
-                    <div className="ButtonLandingPage mt-6 flex justify-center">
-                        <button type="submit" className="px-6 py-2.5 bg-neutral-700 text-red-50 text-base font-semibold font-['Switzer'] rounded-md shadow hover:bg-neutral-800">
-                            Submit
-                        </button>
+                    <div className='flex gap-4 mt-[50px] '>
+                        <input type="submit" value="Tambah Data" className='px-5 py-3 bg-neutral4 text-white rounded-[8px] cursor-pointer items-center' />
+                        <button type="button" className='bg-neutral2 px-5 py-3 rounded-[8px] text-neutral5 font-semibold' onClick={() => { setPopUp(false) }}>Batal</button>
                     </div>
                 </form>
-            </div>      
-            );
+            </div>
+        );
     };
+
 
     return (
         <div className="min-h-screen flex flex-col bg-gray-100">

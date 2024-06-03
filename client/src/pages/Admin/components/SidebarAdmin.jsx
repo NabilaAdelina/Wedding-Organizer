@@ -1,6 +1,5 @@
 import setting from '../../../assets/logo/setting-icon.svg'
 import logout from '../../../assets/icons/logout-icon.svg'
-import profile from '../../../assets/images/profile-admin.png'
 import schedule from '../../../assets/icons/schedule-icon.svg'
 import costplan from '../../../assets/icons/costplan-icon.svg'
 import concept from '../../../assets/icons/concept-icon.svg'
@@ -12,10 +11,6 @@ const SidebarAdmin = () => {
         <div className='px-8 pb-10 pt-14 border-r border-neutral2 bg-white flex flex-col justify-between w-[280px]'>
             <div className='pt-20'>
                 <div className='flex flex-col gap-[20px] '>
-                    <div className='flex gap-3 items-center'>
-                        <img src={profile} alt="Profile" />
-                        <p className='font-medium text-neutral4 text-[20px]'>Gustavo</p>
-                    </div>
                     <div className='flex flex-col justify-between'>
                         <NavLink
                             to="/dashboard/request"
