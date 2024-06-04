@@ -13,7 +13,7 @@ const SidebarAdmin = () => {
                 <div className='flex flex-col gap-[20px] '>
                     <div className='flex flex-col justify-between'>
                         <NavLink
-                            to="/dashboard/request"
+                            to="/fa1"
                             className={({ isActive }) => isActive ? 'p-[10px] flex gap-3 text-gray-700' : 'p-[10px] flex gap-3 text-neutral3'}
                         >
                             <img className='w-5' src={request} alt="Request" />
@@ -27,7 +27,7 @@ const SidebarAdmin = () => {
                             <p>Concept</p>
                         </NavLink>
                         <NavLink
-                            to="/dashboard/costplan"
+                            to="/ra1"
                             className={({ isActive }) => isActive ? 'p-[10px] flex gap-3 text-gray-700' : 'p-[10px] flex gap-3 text-neutral3'}
                         >
                             <img className='w-5' src={costplan} alt="CostPlan" />

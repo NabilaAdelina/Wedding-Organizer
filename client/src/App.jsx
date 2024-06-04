@@ -32,7 +32,6 @@ function App() {
         <Route path="login" element={<Login />}></Route>
         <Route path="/concept" element={<Concept />}></Route>
         <Route path="/schedule" element={<Schedule />}></Route>
-        <Route path="dashboard/costplan" element={<CostPlan />}></Route>
         <Route path="/RA1" element={<RincianAdmin />}></Route>
         <Route path="/RA2" element={<RincianAdmin2 />}></Route>
         <Route path="/fa1" element={<FormA1 />}></Route>
