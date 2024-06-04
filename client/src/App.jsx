@@ -5,11 +5,12 @@ import { Routes, Route } from "react-router-dom"
 import RincianAnggaran from "./pages/RincianAnggaran/RincianAnggaran"
 import Concept from "./pages/Concept/Concept"
 import Schedule from "./pages/Schedule/Schedule"
+import ScheduleAdmin from "./pages/ScheduleAdmin/ScheduleAdmin"
+import Dashboard from "./pages/DashboardAdmin/Dashboard"
 import Profile from "./pages/SettingProfile/SettingLayout/Profile"
 import Setting from "./pages/SettingProfile/SettingLayout/Setting"
 import SignUp from "./pages/Auth/SignUp"
 import Login from "./pages/Auth/Login"
-import CostPlan from "./pages/Admin/CostPlan/CostPlan"
 import RincianAdmin2 from "./pages/Admin/RincianAnggaran/RincianAdmin2"
 import RincianAdmin from "./pages/Admin/RincianAnggaran/RincianAdmin"
 import AdminProfile from "./pages/Admin/AdminSetting/AdminProfile"
@@ -38,6 +39,9 @@ function App() {
         <Route path="/fa2" element={<FormA2 />}></Route>
         <Route path='admin/profile' element={<AdminProfile />} />
         <Route path='admin/setting' element={<AdminSetting />} />
+        <Route path="/dashboard/concept" element={<Dashboard />}></Route>
+        <Route path="/dashboard/schedule" element={<ScheduleAdmin />}></Route>
+        
       </Routes>
     </>
   )

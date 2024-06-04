@@ -4,7 +4,33 @@ import SidebarAdmin from '../components/SidebarAdmin';
 import Footer from '../../../components/Footer';
 import Swal from 'sweetalert2';
 
+
 const RincianAdmin2 = () => {
+    const [popUp, setPopUp] = useState(false);
+
+    const [formData, setFormData] = useState({
+        uraian: "",
+        uraian: '',
+        vol: '',
+        hargaAwal: '',
+        jumlah: '',
+        keterangan: ''
+    });
+
+    const handlePopUp = () => {
+        Swal.fire({
+            title: "Success!",
+            text: "Perubahan akan segera diproses oleh kami!",
+            icon: "success"
+        });
+        setPopUp(false)
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(formData);
+    };
+
     const handlePopup = () => {
         Swal.fire({
             title: "Are you sure?",
@@ -28,6 +54,7 @@ const RincianAdmin2 = () => {
     const [popUp, setPopUp] = useState(false);
 
     const [formData, setFormData] = useState({
+        uraian: '',
         uraian: '',
         vol: '',
         hargaAwal: '',
@@ -59,28 +86,28 @@ const RincianAdmin2 = () => {
                         <div className='flex flex-col gap-5'>
                             <div className='flex flex-col gap-[10px]'>
                                 <label htmlFor="" className='font-semibold text-gray-700'>Uraian</label>
-                                <input onChange={handleChange} name='uraian' type="text" className='rounded-[8px] h-[50px]' />
+                                <input name='uraian' type="text" className='rounded-[8px] h-[50px]' />
                             </div>
                             <div className='flex flex-col gap-[10px]'>
                                 <label htmlFor="" className='font-semibold text-gray-700'>Vol</label>
-                                <input onChange={handleChange} name='vol' type="text" className='rounded-[8px] h-[50px]' />
+                                <input name='vol' type="text" className='rounded-[8px] h-[50px]' />
                             </div>
                             <div className='flex flex-col gap-[10px]'>
                                 <label htmlFor="" className='font-semibold text-gray-700'>Harga Awal</label>
-                                <input onChange={handleChange} name='hargaAwal' type="text" className='rounded-[8px] h-[50px]' />
+                                <input name='hargaAwal' type="text" className='rounded-[8px] h-[50px]' />
                             </div>
                             <div className='flex flex-col gap-[10px]'>
                                 <label htmlFor="" className='font-semibold text-gray-700'>Jumlah</label>
-                                <input onChange={handleChange} name='jumlah' type="text" className='rounded-[8px] h-[50px]' />
+                                <input name='jumlah' type="text" className='rounded-[8px] h-[50px]' />
                             </div>
                             <div className='flex flex-col gap-[10px]'>
                                 <label htmlFor="" className='font-semibold text-gray-700'>Keterangan</label>
-                                <input onChange={handleChange} name='keterangan' type="text" className='rounded-[8px] h-[50px]' />
+                                <input name='keterangan' type="text" className='rounded-[8px] h-[50px]' />
                             </div>
                         </div>
                     </div>
                     <div className='flex gap-4 mt-[50px] '>
-                        <input type="submit" value="Tambah Data" className='px-5 py-3 bg-neutral4 text-white rounded-[8px] cursor-pointer items-center' />
+                        <button onClick={handlePopUp} className='px-5 py-3 bg-neutral4 text-white rounded-[8px] cursor-pointer items-center'>Simpan</button>
                         <button type="button" className='bg-neutral2 px-5 py-3 rounded-[8px] text-neutral5 font-semibold' onClick={() => { setPopUp(false) }}>Batal</button>
                     </div>
                 </form>
