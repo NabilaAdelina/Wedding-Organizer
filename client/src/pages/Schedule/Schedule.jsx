@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import ScheduleLayout from './ScheduleLayout/ScheduleLayout'
 
+
 const Schedule = () => {
     return (
         <>

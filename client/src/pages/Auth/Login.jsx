@@ -7,7 +7,7 @@ const Login = () => {
                 { label: 'Alamat Email', type: 'email' }, { label: 'Kata Sandi', type: 'password' }
             ]}
             name="Masuk"
-            details="Sudah punya akun?"
+            details="Belum punya akun?"
             path="/signup"
             navigation="Daftar"
         />

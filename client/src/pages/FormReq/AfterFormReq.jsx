@@ -20,7 +20,7 @@ const AfterFormReq = () => {
             <div className='absolute left-0 right-0 top-0 bottom-0 bg-black bg-opacity-70 h-full flex justify-center items-center'>
                 <div className='bg-neutral1 p-8 rounded-[8px] w-[772px] flex flex-col gap-5'>
                     <p className='font-medium text-neutral5'>Apa yang ingin anda ubah?</p>
-                    <textarea className='rounded-xl h-[160px] mb-2' name="" id="" placeholder='Tulis konsep awal pernikahan yang anda inginkan, sertakan juga tanggal hari H dan kasaran budget anda!'></textarea>
+                    <textarea className='rounded-xl h-[160px] mb-2' name="" id="" placeholder='Tuliskan perubahan apa yang Anda inginkan!'></textarea>
                     <div className='flex justify-end gap-2'>
                         <button className='bg-neutral2 px-[18px] py-[9px] rounded-md text-neutral5 font-semibold' onClick={() => { setPopUp(false) }}>Batal</button>
                         <button onClick={handlePopUp} className='bg-primary1 px-[18px] py-[9px] rounded-md text-primary5 font-semibold'>Simpan</button>
@@ -65,9 +65,13 @@ const AfterFormReq = () => {
                     </table>
                 </div>
                 <div className="w-full max-w-[1289px] px-4 mb-12 flex justify-end">
-                    <button onClick={() => {
-                        setPopUp(true)
-                    }} className="bg-zinc-500 text-white text-[20px] font-medium font-Switzer leading-normal tracking-wide rounded-[8px] px-6 py-3">
+                    <button
+                        onClick={() => {
+                            setPopUp(true)
+                        }}
+                        style={{ backgroundColor: '#A79277' }}
+                        className="text-white text-[17px] font-medium font-Switzer leading-normal tracking-wide rounded-[8px] px-6 py-3"
+                    >
                         Ajukan Perubahan
                     </button>
                 </div>
