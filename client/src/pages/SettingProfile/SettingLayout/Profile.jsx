@@ -41,13 +41,13 @@ const Profile = () => {
                                     <input type="text" className='rounded-[8px]' />
                                 </div>
                                 <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">Alamat Email</label>
+                                    <label htmlFor="">Email</label>
                                     <input type="text" className='rounded-[8px]' />
                                 </div>
                             </div>
                             <div className='flex flex-col gap-[32px]'>
                                 <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">Nomer Handphone</label>
+                                    <label htmlFor="">No Telp</label>
                                     <input type="text" className='rounded-[8px]' />
                                 </div>
                                 <div className='flex flex-col w-[260px] gap-[10px]'>

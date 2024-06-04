@@ -17,7 +17,7 @@ const FormAuth = (props) => {
             <div className='flex flex-col justify-center p-20  w-1/2'>
                 <div className='mb-[30px]'>
                     <h1 className='text-[50px] font-boska font-bold mb-[15px]'>{name}</h1>
-                    <p>.... memberikan Anda pengalaman terbaik dalam pernikahan impian Anda! </p>
+                    <p>EverAfter memberikan Anda pengalaman terbaik dalam pernikahan impian Anda! </p>
                 </div>
                 <form action="submit">
                     <div className='flex flex-col 2xl:gap-4 xl:gap-2 mb-10'>
@@ -27,7 +27,7 @@ const FormAuth = (props) => {
                         <div className='flex justify-between'>
                             <div className='flex gap-2 items-center'>
                                 <input type="checkbox" className='rounded-sm cursor-pointer' />
-                                <p>ingatkan aku</p>
+                                <p>ingatkan saya</p>
                             </div>
                             <p className="text-blue-600">Lupa Kata Sandi?</p>
                         </div>
