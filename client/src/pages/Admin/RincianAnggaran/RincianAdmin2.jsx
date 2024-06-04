@@ -29,7 +29,6 @@ const RincianAdmin2 = () => {
 
     const [formData, setFormData] = useState({
         uraian: '',
-        uraian: '',
         vol: '',
         hargaAwal: '',
         jumlah: '',
