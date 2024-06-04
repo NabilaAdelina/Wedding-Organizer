@@ -2,6 +2,7 @@ import React from 'react';
 import NavbarAdmin from '../components/NavbarAdmin';
 import SidebarAdmin from '../components/SidebarAdmin';
 import Footer from '../../../components/Footer';
+import { Link } from 'react-router-dom';
 
 const RincianAdmin = () => {
     return (
@@ -28,7 +29,7 @@ const RincianAdmin = () => {
                                     <td className="px-6 py-4 text-gray-800 text-base">Perumahan X Blok A9 No.79</td>
                                     <td className="px-6 py-4 text-gray-800 text-base">+62-365-7215-1749</td>
                                     <td className="px-6 py-4">
-                                        <button className="bg-zinc-500 text-white px-5 py-2 rounded-lg hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-opacity-75">Details</button>
+                                        <Link to="/ra2" className="bg-zinc-500 text-white px-5 py-2 rounded-lg hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-opacity-75">Details</Link>
                                     </td>
                                 </tr>
                                 <tr className="border-t">
@@ -36,7 +37,7 @@ const RincianAdmin = () => {
                                     <td className="px-6 py-4 text-gray-800 text-base">Perumahan Y Blok B10 No.45</td>
                                     <td className="px-6 py-4 text-gray-800 text-base">+62-134-7215-5734</td>
                                     <td className="px-6 py-4">
-                                        <button className="bg-zinc-500 text-white px-5 py-2 rounded-lg hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-opacity-75">Details</button>
+                                        <Link to="/ra2" className="bg-zinc-500 text-white px-5 py-2 rounded-lg hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-opacity-75">Details</Link>
                                     </td>
                                 </tr>
                             </tbody>

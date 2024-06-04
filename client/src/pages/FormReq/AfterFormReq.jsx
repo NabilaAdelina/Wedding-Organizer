@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Swal from 'sweetalert2';
 
 const AfterFormReq = () => {
-    const [popUp, SetPopup] = useState(false);
+    const [popUp, setPopUp] = useState(false);
+
+    const handlePopUp = () => {
+        Swal.fire({
+            title: "Success!",
+            text: "Perubahan akan segera diproses oleh kami!",
+            icon: "success"
+        });
+        setPopUp(false)
+    }
 
     const PopUpForm = () => {
         return (
@@ -12,8 +22,8 @@ const AfterFormReq = () => {
                     <p className='font-medium text-neutral5'>Apa yang ingin anda ubah?</p>
                     <textarea className='rounded-xl h-[160px] mb-2' name="" id="" placeholder='Tulis konsep awal pernikahan yang anda inginkan, sertakan juga tanggal hari H dan kasaran budget anda!'></textarea>
                     <div className='flex justify-end gap-2'>
-                        <button className='bg-neutral2 px-[18px] py-[9px] rounded-md text-neutral5 font-semibold' onClick={() => { SetPopup(false) }}>Batal</button>
-                        <button className='bg-primary1 px-[18px] py-[9px] rounded-md text-primary5 font-semibold'>Simpan</button>
+                        <button className='bg-neutral2 px-[18px] py-[9px] rounded-md text-neutral5 font-semibold' onClick={() => { setPopUp(false) }}>Batal</button>
+                        <button onClick={handlePopUp} className='bg-primary1 px-[18px] py-[9px] rounded-md text-primary5 font-semibold'>Simpan</button>
                     </div>
                 </div>
             </div>
@@ -56,7 +66,7 @@ const AfterFormReq = () => {
                 </div>
                 <div className="w-full max-w-[1289px] px-4 mb-12 flex justify-end">
                     <button onClick={() => {
-                        SetPopup(true)
+                        setPopUp(true)
                     }} className="bg-zinc-500 text-white text-[20px] font-medium font-Switzer leading-normal tracking-wide rounded-[8px] px-6 py-3">
                         Ajukan Perubahan
                     </button>
