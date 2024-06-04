@@ -2,8 +2,17 @@ import React from 'react'
 import SidebarProfile from './SidebarProfile'
 import NavbarProfile from './NavbarProfile'
 import profile from '../../../assets/images/profile-medium.png'
+import Swal from 'sweetalert2'
 
 const AdminProfile = () => {
+    const handlePopUp = () => {
+        Swal.fire({
+            title: "Success!",
+            text: "Perubahan telah berhasil!",
+            icon: "success"
+        });
+        setPopUp(false)
+    }
     return (
         <>
             <NavbarProfile />
@@ -47,7 +56,10 @@ const AdminProfile = () => {
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" value="Simpan Perubahan" className='px-5 py-3 bg-neutral4 text-white rounded-[8px] mt-[50px] cursor-pointer' />
+                        <input onClick={(e) => {
+                            e.preventDefault()
+                            handlePopUp()
+                        }} type="submit" value="Simpan Perubahan" className='px-5 py-3 bg-neutral4 text-white rounded-[8px] mt-[50px] cursor-pointer' />
                     </form>
                 </div>
             </div>
