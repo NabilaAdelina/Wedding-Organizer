@@ -6,12 +6,7 @@ const KonsepAcara = () => {
     <section className='flex flex-col bg-neutral1 h-auto items-center px-[200px] pt-[100px] pb-[100px]'>
         <div className='bg-transparent flex m-auto'>
             <div>
-                <div className=' flex w-auto'>
-                    <div>
-                    <img className='rounded-3xl' src=".\src\assets\images\bg-konsep.png" alt="Wedding Documentation" />
-                    </div>
-                </div>
-                <div className='mt-[100px]'>
+                <div className='mt-[50px]'>
                     <a href="#" className="flex float-right text-[16px] font-switzer font-bold text-blue-500">Lihat Rincian Anggaran 
                         <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 9L9 1m0 0H1m8 0V9"/>

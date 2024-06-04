@@ -4,6 +4,7 @@ import SidebarAdmin from '../Admin/components/SidebarAdmin'
 import Footer from '../../components/Footer'
 import SALayout from './SALayout/SALayout'
 
+
 const ScheduleAdmin = () => {
     return (
         <>
