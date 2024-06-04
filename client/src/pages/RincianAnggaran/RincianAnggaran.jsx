@@ -1,9 +1,38 @@
-import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import bgservice from "../../assets/images/bg-service.png"
+import React, { useState } from 'react';
+import Swal from 'sweetalert2';
+
 
 const RincianAnggaran = () => {
+    const [popUp, setPopUp] = useState(false);
+
+    const handlePopUp = () => {
+        Swal.fire({
+            title: "Success!",
+            text: "Perubahan akan segera diproses oleh kami!",
+            icon: "success"
+        });
+        setPopUp(false);
+    }
+
+    const PopUpForm = () => {
+        return (
+            <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+                <div className='bg-neutral1 p-8 rounded-[8px] w-[772px] flex flex-col gap-5'>
+                    <p className='font-medium text-neutral5'>Apa yang ingin anda ubah?</p>
+                    <textarea className='rounded-xl h-[160px] mb-2' placeholder='Tulis konsep awal pernikahan yang anda inginkan, sertakan juga tanggal hari H dan kasaran budget anda!'></textarea>
+                    <div className='flex justify-end gap-2'>
+                        <button className='bg-neutral2 px-[18px] py-[9px] rounded-md text-neutral5 font-semibold' onClick={() => { setPopUp(false) }}>Batal</button>
+                        <button onClick={handlePopUp} className='bg-primary1 px-[18px] py-[9px] rounded-md text-primary5 font-semibold'>Simpan</button>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
+
     return (
         <>
             <Header />
@@ -76,12 +105,12 @@ const RincianAnggaran = () => {
                             </tbody>
                         </table>
                     </div>
-                        <div className="icon rotate-45">
-                            <div className="w-4 h-4 flex justify-center items-center">
-                                <div className="icon-outline-arrow-right"></div>
-                            </div>
+                    <div className="icon rotate-45">
+                        <div className="w-4 h-4 flex justify-center items-center">
+                            <div className="icon-outline-arrow-right"></div>
                         </div>
                     </div>
+                </div>
                 <section className='h-[547px] flex justify-center items-center mt-20' style={{
                     backgroundImage: `url(${bgservice})`, backgroundSize: 'cover'
                 }}>
@@ -95,13 +124,20 @@ const RincianAnggaran = () => {
                             </div>
                             <div>
                                 <br />
-                                <a href="#" className="flex float-right text-[16px] font-switzer font-bold text-blue-500">Ajukan perubahan 
+                                <button
+                                    onClick={() => {
+                                        setPopUp(true);
+                                    }}
+                                    className="flex float-right text-[16px] font-switzer font-bold text-blue-500"
+                                >
+                                    Ajukan Perubahan
                                     <svg className="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 9L9 1m0 0H1m8 0V9"/>
+                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 9L9 1m0 0H1m8 0V9" />
                                     </svg>
-                                </a>
+                                </button>
                             </div>
                         </div>
+                        {popUp && <PopUpForm />}
                     </div>
                 </section>
             </div>
