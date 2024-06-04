@@ -73,25 +73,15 @@ const RincianAnggaran = () => {
                                     <td className="border px-4 py-2">Rp5.000.000</td>
                                     <td className="border px-4 py-2">Dekorasi photobooth, pelaminan, dsb</td>
                                 </tr>
-                                <tr>
-                                    <td colSpan="4" className="border px-4 py-2 text-right font-bold">Total</td>
-                                    <td className="border px-4 py-2">Rp25.000.000</td>
-                                    <td className="border px-4 py-2"></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
-
-                    <div className="upload-section flex justify-center items-center mt-6">
-                        <button className="text-blue-600 text-base font-semibold">Upload Bukti Transfer</button>
                         <div className="icon rotate-45">
                             <div className="w-4 h-4 flex justify-center items-center">
                                 <div className="icon-outline-arrow-right"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-
                 <section className='h-[547px] flex justify-center items-center mt-20' style={{
                     backgroundImage: `url(${bgservice})`, backgroundSize: 'cover'
                 }}>
