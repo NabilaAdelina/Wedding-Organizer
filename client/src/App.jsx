@@ -41,6 +41,7 @@ function App() {
         <Route path='admin/profile' element={<AdminProfile />} />
         <Route path='admin/setting' element={<AdminSetting />} />
         <Route path="/dashboard/concept" element={<Dashboard />}></Route>
+        
       </Routes>
     </>
   )

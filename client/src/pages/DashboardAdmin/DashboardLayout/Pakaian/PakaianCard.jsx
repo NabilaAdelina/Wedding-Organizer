@@ -1,20 +1,26 @@
-import React from 'react'
 
-const PakaianCard = () => {
-    const { name, url, deskripsi } = props
+const PakaianCard = (props) => {
+    const { name, harga, url, deskripsi, jenis, warna, size } = props
     return (
         <>
-        <div>
-            <div className='w-[350px] h-[300px] flex justify-center items-center pb-5' style={{
-                backgroundImage: `url(${url})`, backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat'
+        <div className="bg-gray-100 w-[350px] h-[600px] border mt-5 hover:shadow-2xl cursor-pointer">
+            <div className='flex w-full' style={{
+                backgroundImage: `url(${url})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '400px',
             }}>
-                <div>
-                    <p className='font-boska font-bold text-[24px] text-white'>{name}</p>
-                </div>
+                
+            </div>
+            <div className="flex flex-row justify-between">
+                    <h1 className='font-switzer font-bold m-3'>{name}</h1>
+                    <h2 className="font-switzer font-bold m-3">{harga}</h2>
             </div>
             <div>
-                <p className='font-switzer mt-8 text-center text-[16px] text-primary4'>{deskripsi}</p>
+                <p className='font-switzer justify-stretch mx-3 mb-2 text-[14px]'>{deskripsi}</p>
+                <p className='font-switzer mx-3 mb-2 text-[14px]'>Jenis : {jenis}</p>
+                
+                <div className="flex flex-row">
+                    <p className='font-switzer mx-3 mb-2 text-[14px]'>Warna : {warna}</p>
+                    <p className='font-switzer mx-3 mb-2 text-[14px]'>Ukuran : {size}</p>
+                </div>
             </div>
         </div>
         </>

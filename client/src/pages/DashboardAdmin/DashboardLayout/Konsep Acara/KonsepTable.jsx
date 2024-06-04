@@ -1,50 +1,31 @@
-import React, { useState } from "react";
+// src/components/VendorTable.jsx
+import React from 'react';
 
-const KonsepTable = ({ konsep, onEdit, onDelete }) => {
-    const [data, setData] = useState([
-        { kategori: "Tamu Undangan", isi: "500", keterangan: "" },
-        { kategori: "Perkiraan Budget", isi: "100 Jt", keterangan: "" },
-        { kategori: "Perkiraan Hari-h", isi: "10 November", keterangan: "" },
-        { kategori: "Tema Acara", isi: "Rustik", keterangan: "" },
-        { kategori: "Gambar Acara", isi: "", keterangan: "" },
-    ]);
-        
-    //     const handleInputChange = (index, field, value) => {
-    //         const updatedData = [...data];
-    //         updatedData[index][field] = value;
-    //         setData(updatedData);
-    //     };
-        
-    //     const handleImageUpload = (index, file) => {
-    //         const updatedData = [...data];
-    //         updatedData[index].keterangan = file;
-    //         setData(updatedData);
-    //     };
-        
-    //     const handleDelete = (index) => {
-    //         const updatedData = [...data];
-    //         updatedData.splice(index, 1);
-    //         setData(updatedData);
-    //     };
-
+const KonsepTable = () => {
     return (
-        <div className="overflow-hidden min-w-full rounded-lg shadow-md">
-        <table className="min-w-full bg-white border rounded-lg">
-            <thead className="bg-gray-100">
+        <div className="overflow-hidden w-full mx-5 border rounded-lg shadow-md">
+        <table className="min-w-full rounded-lg text-left">
+            <thead className="bg-gray-100 text-gray-500 text-[12px]">
                 <tr className='font-switzer'>
-                    <th className="py-2">Kategori</th>
-                    <th className="py-2">Isi</th>
-                    <th className="py-2">Keterangan</th>
+                    <th className="py-5 text-center">Edit</th>
+                    <th className="py-5 text-center">Tamu</th>
+                    <th className="py-5 text-center">Budget</th>
+                    <th className="py-5 text-center">Hari-H</th>
+                    <th className="py-5 text-center">Tema</th>
+
                 </tr>
             </thead>
             <tbody>
-                <tr className='font-switzer'>
-                    <td className="py-2">{konsep.kategori}</td>
-                    <td className="py-2">{konsep.Isi}</td>
-                    <td className="py-2 text-center">
-                        <button onClick={() => onDelete(vendor)} className='mr-1 w-[20px] h-[20px]'><img src="https://img.icons8.com/ios/50/000000/delete.png" alt="" /></button>
-                        <button onClick={() => onEdit(vendor)} className='ml-1 w-[20px] h-[20px]'><img src="https://img.icons8.com/ios/50/000000/edit.png" alt="" /></button>
+                <tr>
+                    <td className="py-5 text-center">
+                        <button>
+                            <img src="../src/assets/icons/edit-icon.svg" alt="edit" />
+                        </button>
                     </td>
+                    <td className="py-5 text-center">500</td>
+                    <td className="py-5 text-center">Rp. 100.000.000</td>
+                    <td className="py-5 text-center">10 November 2025</td>
+                    <td className="py-5 text-center">Rustik</td>
                 </tr>
             </tbody>
         </table>

@@ -1,16 +1,19 @@
 import React from 'react'
 import Footer from '../../components/Footer'
 import ClientName from './DashboardLayout/ClientName'
+import KonsepMenu from './DashboardLayout/Konsep Acara/KonsepMenu'
 import VendorMenu from './DashboardLayout/Vendor Acara/VendorMenu'
+import DetailMenu from './DashboardLayout/Detail Acara/DetailMenu'
+import DecorMenu from './DashboardLayout/Decoration/DecorMenu'
 import Pakaian from './DashboardLayout/Pakaian/PakaianMenu'
-import SidebarAdmin from '../../pages/Admin/components/SidebarAdmin'
-import NavbarAdmin from '../../pages/Admin/components/NavbarAdmin'
+import SidebarAdmin from '../Admin/components/SidebarAdmin'
+import NavbarAdmin from '../Admin/components/NavbarAdmin'
 
 
 const Dashboard = () => {
     return (
         <>
-        <div className="min-h-screen flex flex-col">
+        <div className="flex flex-col">
             <NavbarAdmin />
             <div className="flex flex-1">
                 <SidebarAdmin />
@@ -18,8 +21,16 @@ const Dashboard = () => {
                     <ClientName />
                     <VendorMenu />
                     <Pakaian />
-
+                    <DecorMenu />
+                    <KonsepMenu />
+                    <DetailMenu />
+                    <div className='flex justify-end'>
+                        <button className='bg-neutral5 text-primary2 px-10 py-2 rounded-lg m-10'>
+                        Simpan Konsep
+                        </button>
+                    </div>
                 </div>
+                
             </div>
             <Footer />
         </div>

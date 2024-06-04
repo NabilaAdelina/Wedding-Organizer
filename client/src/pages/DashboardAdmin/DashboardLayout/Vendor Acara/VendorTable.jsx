@@ -4,7 +4,7 @@ import VendorRow from './VendorRow';
 
 const VendorTable = ({ vendors, onEdit, onDelete, isAllSelected, onSelectAll }) => {
     return (
-        <div className="overflow-hidden rounded-lg shadow-md">
+        <div className="overflow-hidden m-5 rounded-lg shadow-md">
         <table className="min-w-full bg-white border rounded-lg">
             <thead className="bg-gray-100">
             <tr className='font-switzer'>
