@@ -19,7 +19,9 @@ const Header = () => {
     ]
     return (
         <header className='bg-neutral4 flex justify-between px-[64px] py-[20px]'>
-            <img src={logo3} alt="" />
+            <Link to={'/'}>
+                <img src={logo3} alt="" />
+            </Link>
             <div className='flex gap-5 items-center'>
                 <ul className='flex gap-10'>
                     {linkNav.map((link) => {
@@ -29,7 +31,7 @@ const Header = () => {
                     })}
                 </ul>
                 <div className='flex gap-5'>
-                    <Link className='text-primary3'>My profile</Link>
+                    <Link to={"/user/profile"} className='text-primary3'>My profile</Link>
                 </div>
             </div>
         </header>

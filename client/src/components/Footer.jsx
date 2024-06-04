@@ -10,12 +10,7 @@ const Footer = () => {
             <div className='bg-neutral4 px-[200px] flex justify-between items-center'>
                 <img src={logoFooter} alt="" />
                 <div>
-                    <ul className="text-neutral3 flex gap-3">
-                        <Link>About Us</Link>
-                        <Link>Terms of Service</Link>
-                        <Link>Privacy Policy</Link>
-                        <Link>FAQ</Link>
-                    </ul>
+                    <p className="text-neutral1">&#169; Ever After 2024</p>
                 </div>
                 <div className="flex gap-3">
                     <img src={facebook} alt="" />

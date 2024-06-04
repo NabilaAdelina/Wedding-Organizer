@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import ScheduleLayout from './ScheduleLayout/Schedule'
+import ScheduleLayout from './ScheduleLayout/ScheduleLayout'
 
 const Schedule = () => {
     return (

@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import heroimg from "../../../assets/images/hero-img.png"
+import arrow from "../../../assets/logo/arrow-bottom.svg"
 import { Link } from 'react-router-dom'
+import { Context } from '../LandingPage'
 const Hero = () => {
-    const [isLogin, setIsLogin] = useState(true)
+    const { isLogin, setIslogin } = useContext(Context);
     return (
         <section className='h-[872px] bg-contain flex justify-center items-center' style={{
             backgroundImage: `url(${heroimg})`, backgroundSize: 'cover',
@@ -18,7 +20,7 @@ const Hero = () => {
                     Crafting every detail to shape your perfect wedding day
                 </p>
                 {
-                    isLogin ? <Link to="/form" className='px-[26px] py-[13px] w-[199px] bg-neutral1 text-primary1 font-bold rounded-md'>Form Planning</Link> : <p>Scroll</p>
+                    isLogin ? <Link to="/form" className='px-[26px] py-[13px] w-[199px] bg-neutral1 text-primary1 font-bold rounded-md'>Form Planning</Link> : <Link className='flex flex-col justify-center items-center gap-2'><img className='w-[24px]' src={arrow} alt="" /><p className='font-medium text-[#D1BB9E] opacity-[0.8]'>Swip Up!</p></Link>
                 }
             </div>
         </section>
