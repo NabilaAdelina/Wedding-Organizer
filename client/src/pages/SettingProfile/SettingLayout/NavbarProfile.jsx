@@ -11,14 +11,7 @@ const NavbarProfile = () => {
                 <img src={navback} alt="" />
                 <p className='text-neutral3'>Kembali</p>
             </Link>
-            <div className='relative'>
-                <img className='absolute left-2 bottom-[5px]' src={search} alt="" />
-                <input className='pl-10 p-2 w-[340px] rounded-xl border-neutral2' placeholder='Pencarian' type="text" />
-            </div>
-            <div className='flex gap-3'>
-                <img src={notification} alt="" />
-                <img src={profile} alt="" />
-            </div>
+            <img src={profile} alt="" />
         </div>
     )
 }
