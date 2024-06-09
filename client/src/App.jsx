@@ -17,6 +17,8 @@ import AdminProfile from "./pages/Admin/AdminSetting/AdminProfile"
 import AdminSetting from "./pages/Admin/AdminSetting/AdminSetting"
 import FormA1 from "./pages/Admin/FormAdmin/FormA1"
 import FormA2 from "./pages/Admin/FormAdmin/FormA2"
+import EditProfile from "./pages/SettingProfile/SettingLayout/EditProfile"
+import AdminEditProfile from "./pages/Admin/AdminSetting/AdminEditProfile"
 
 function App() {
 
@@ -29,6 +31,7 @@ function App() {
         <Route path="aform" element={<AfterFormReq />}></Route>
         <Route path='user/profile' element={<Profile />} />
         <Route path='user/setting' element={<Setting />} />
+        <Route path='user/profile/edit' element={<EditProfile />} />
         <Route path="signup" element={<SignUp />}></Route>
         <Route path="login" element={<Login />}></Route>
         <Route path="/concept" element={<Concept />}></Route>
@@ -39,9 +42,10 @@ function App() {
         <Route path="/fa2" element={<FormA2 />}></Route>
         <Route path='admin/profile' element={<AdminProfile />} />
         <Route path='admin/setting' element={<AdminSetting />} />
+        <Route path='admin/profile/edit' element={<AdminEditProfile />} />
         <Route path="/dashboard/concept" element={<Dashboard />}></Route>
         <Route path="/dashboard/schedule" element={<ScheduleAdmin />}></Route>
-        
+
       </Routes>
     </>
   )

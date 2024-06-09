@@ -47,7 +47,7 @@ const AdminSetting = () => {
                             <h1 className='text-[20px] text-neutral4 font-semibold'>Alamat Email</h1>
                             <div className='flex gap-1'>
                                 <p className='text-[14px]'>Alamat email Anda adalah</p>
-                                <p className='text-[14px] text-neutral4 font-semibold'>RiskiBashir@gmail.com</p>
+                                <p className='text-[14px] text-neutral4 font-semibold'>ihsan@gmail.com</p>
                             </div>
                         </div>
                         <div className='flex flex-col gap-5'>

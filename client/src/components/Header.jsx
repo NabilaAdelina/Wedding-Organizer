@@ -1,5 +1,5 @@
 import React from 'react'
-import logo3 from '../assets/logo/logo3.svg'
+import logo3 from '../assets/logo/logo-new.svg'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -26,12 +26,12 @@ const Header = () => {
                 <ul className='flex gap-10'>
                     {linkNav.map((link) => {
                         return (
-                            <Link to={link.path} key={link.id} className=' text-primary3'>{link.name}</Link>
+                            <Link to={link.path} key={link.id} className=' text-white'>{link.name}</Link>
                         )
                     })}
                 </ul>
                 <div className='flex gap-5'>
-                    <Link to={"/user/profile"} className='text-primary3'>My profile</Link>
+                    <Link to={"/user/profile"} className='text-white'>My profile</Link>
                 </div>
             </div>
         </header>
