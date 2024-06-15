@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import logo2 from "../../../assets/logo/logo2.png";
 import { Link } from 'react-router-dom';
-import { Context } from '../LandingPage'
+import { AuthContext } from '../../../hooks/AuthContext';
 
 const Navbar = () => {
-    const { isLogin, setIslogin } = useContext(Context);
+    const { isLogin, setIslogin } = useContext(AuthContext);
 
     const linkNav = [
         { id: 1, name: "Concept", path: "/concept" },
