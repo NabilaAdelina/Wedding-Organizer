@@ -1,4 +1,4 @@
-
+import { Checkbox } from 'flowbite-react'
 const PakaianCard = (props) => {
     const { name, harga, url, deskripsi, jenis, warna, size } = props
     return (
@@ -20,6 +20,9 @@ const PakaianCard = (props) => {
                 <div className="flex flex-row">
                     <p className='font-switzer mx-3 mb-2 text-[14px]'>Warna : {warna}</p>
                     <p className='font-switzer mx-3 mb-2 text-[14px]'>Ukuran : {size}</p>
+                </div>
+                <div className='flex justify-end mr-2'>
+                <Checkbox className='bg-white border-black cursor-pointer' value=''></Checkbox>
                 </div>
             </div>
         </div>

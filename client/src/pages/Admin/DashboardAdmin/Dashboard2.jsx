@@ -8,9 +8,19 @@ import DecorMenu from './DashboardLayout/Decoration/DecorMenu'
 import Pakaian from './DashboardLayout/Pakaian/PakaianMenu'
 import NavbarAdmin from '../components/NavbarAdmin';
 import SidebarAdmin from '../components/SidebarAdmin';
+import Swal from 'sweetalert2';
 
 
 const Dashboard2 = () => {
+
+    const handlePopUp = () => {
+        Swal.fire({
+            title: "Success!",
+            text: "Perubahan telah berhasil!",
+            icon: "success"
+        });
+    }
+
     return (
         <>
         <div className="flex flex-col">
@@ -25,9 +35,10 @@ const Dashboard2 = () => {
                     <KonsepMenu />
                     <DetailMenu />
                     <div className='flex justify-end'>
-                        <button className='bg-neutral5 text-primary2 px-10 py-2 rounded-lg m-10'>
-                        Simpan Konsep
-                        </button>
+                    <input onClick={(e) => {
+                            e.preventDefault()
+                            handlePopUp()
+                        }} type="submit" value="Simpan Konsep" className='px-5 py-3 m-10 bg-neutral4 text-primary2 rounded-[8px] mt-[50px] cursor-pointer' />
                     </div>
                 </div>
                 

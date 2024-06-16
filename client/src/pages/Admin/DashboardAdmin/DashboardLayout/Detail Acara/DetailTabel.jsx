@@ -1,6 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Swal from 'sweetalert2';
 
 const DetailTabel = () => {
+    const [popUp, setPopUp] = useState(false);
+
+    const handlePopUp = () => {
+        Swal.fire({
+            title: "Success!",
+            text: "Perubahan akan segera diproses oleh kami!",
+            icon: "success"
+        });
+        setPopUp(false);
+    }
+
+    const PopUpForm = () => {
+        return (
+            <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 flex justify-center items-center z-50">                <div className='bg-neutral1 p-8 rounded-[8px] w-[772px] flex flex-col gap-5'>
+                <p className='font-medium text-neutral5'>Detail Acara</p>
+                <textarea className='rounded-xl h-[160px] mb-2' placeholder='Tuliskan perubahan apa yang Anda inginkan!'></textarea>
+                <div className='flex justify-end gap-2'>
+                    <button className='bg-neutral2 px-[18px] py-[9px] rounded-md text-neutral5 font-semibold' onClick={() => { setPopUp(false) }}>Batal</button>
+                    <button onClick={handlePopUp} className='bg-neutral5 px-[18px] py-[9px] rounded-md text-primary5 font-semibold'>Simpan</button>
+                </div>
+            </div>
+            </div>
+        )
+    }
+
     return (
         <div className="overflow-hidden w-full mx-5 border rounded-lg shadow-md">
         <table className="min-w-full rounded-lg text-left">
@@ -16,12 +42,13 @@ const DetailTabel = () => {
                     <td className="py-5 px-1"></td>
                     <td className="py-5">Dalam perayaan pernikahan, kami telah memilih konsep yang menggabung...</td>
                     <td className="py-5 text-center">
-                        <button>
+                        <button onClick={() => {setPopUp(true);}}>
                             <img src="../src/assets/icons/edit-icon.svg" alt="edit" />
                         </button></td>
                 </tr>
             </tbody>
         </table>
+        {popUp && <PopUpForm />}
         </div>
     );
 };

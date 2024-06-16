@@ -10,7 +10,7 @@ const DecorMenu = () => {
     return (
         <>
         <div className="p-6 bg-white border rounded-lg shadow-md m-3">
-            <h1 className="text-[36px] m-5">Interior & Decoration</h1>
+            <h1 className="text-[36px] font-switzer m-5">Interior & Decoration</h1>
             <div className="flex flex-col mb-4 ml-[170px]">
                 <div className="flex space-x-2">
                 <AddDecorButton onAdd={handleAddDecor} />

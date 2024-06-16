@@ -7,7 +7,7 @@ const VendorTable = ({ vendors, onEdit, onDelete, isAllSelected, onSelectAll }) 
         <div className="overflow-hidden m-5 rounded-lg shadow-md">
         <table className="min-w-full bg-white border rounded-lg">
             <thead className="bg-gray-100">
-            <tr className='font-switzer'>
+            <tr className='font-switzer '>
                 <th className="py-2 text-center">
                 <input 
                     type="checkbox" 
