@@ -1,10 +1,10 @@
 import React from 'react'
-import NavbarAdmin from '../Admin/components/NavbarAdmin'
-import SidebarAdmin from '../Admin/components/SidebarAdmin'
-import Footer from '../../components/Footer'
+import NavbarAdmin from '../components/NavbarAdmin'
+import SidebarAdmin from '../components/SidebarAdmin'
+import Footer from '../../../components/Footer'
 import SALayout from './SALayout/SALayout'
 
-const ScheduleAdmin = () => {
+const ScheduleAdmin2 = () => {
     return (
         <>
         <div className="flex flex-col">
@@ -21,4 +21,4 @@ const ScheduleAdmin = () => {
     )
 }
 
-export default ScheduleAdmin
+export default ScheduleAdmin2

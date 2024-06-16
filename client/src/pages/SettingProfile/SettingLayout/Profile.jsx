@@ -5,6 +5,12 @@ import profile from '../../../assets/images/profile-medium.png'
 import { useNavigate } from 'react-router-dom'
 
 const Profile = () => {
+    const userProfile = {
+        fullName: "Muhammad Ihsan Nabawi",
+        email: "ihsan@example.com",
+        phone: "+62-123-4567-8910",
+        postalCode: "12345"
+    }
 
     const navigate = useNavigate()
 
@@ -27,27 +33,27 @@ const Profile = () => {
                     <form action="">
                         <div className='flex gap-[52px]'>
                             <div className='flex flex-col gap-[32px]'>
-                                <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">Nama Lengkap</label>
-                                    <input type="text" className='rounded-[8px]' />
-                                </div>
-                                <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">Email</label>
-                                    <input type="text" className='rounded-[8px]' />
-                                </div>
+                            <div className='flex flex-col w-[260px] gap-[10px]'>
+                                <label>Nama Lengkap</label>
+                                <p className='rounded-[8px] bg-gray-100 p-3'>{userProfile.fullName}</p>
                             </div>
-                            <div className='flex flex-col gap-[32px]'>
-                                <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">No Telp</label>
-                                    <input type="text" className='rounded-[8px]' />
-                                </div>
-                                <div className='flex flex-col w-[260px] gap-[10px]'>
-                                    <label htmlFor="">Kode Pos</label>
-                                    <input type="text" className='rounded-[8px]' />
-                                </div>
+                            <div className='flex flex-col w-[260px] gap-[10px]'>
+                                <label>Email</label>
+                                <p className='rounded-[8px] bg-gray-100 p-3'>{userProfile.email}</p>
                             </div>
                         </div>
-                        <button onClick={() => { navigate("/user/profile/edit") }} className='px-5 py-3 bg-neutral4 text-white rounded-[8px] mt-[50px] cursor-pointer'>
+                        <div className='flex flex-col gap-[32px]'>
+                            <div className='flex flex-col w-[260px] gap-[10px]'>
+                                <label>No Telp</label>
+                                <p className='rounded-[8px] bg-gray-100 p-3'>{userProfile.phone}</p>
+                            </div>
+                            <div className='flex flex-col w-[260px] gap-[10px]'>
+                                <label>Kode Pos</label>
+                                <p className='rounded-[8px] bg-gray-100 p-3'>{userProfile.postalCode}</p>
+                            </div>
+                            </div>
+                        </div>
+                        <button onClick={() => { navigate("/admin/profile/edit") }} className='px-5 py-3 bg-neutral4 text-white rounded-[8px] mt-[50px] cursor-pointer'>
                             Edit Profile
                         </button>
                     </form>

@@ -4,7 +4,7 @@ import SidebarAdmin from '../components/SidebarAdmin';
 import Footer from '../../../components/Footer';
 import { Link } from 'react-router-dom';
 
-const RincianAdmin = () => {
+const RincianAdmin1 = () => {
     return (
         <div className="min-h-screen flex flex-col">
             <NavbarAdmin />
@@ -50,4 +50,4 @@ const RincianAdmin = () => {
     );
 };
 
-export default RincianAdmin;
+export default RincianAdmin1;

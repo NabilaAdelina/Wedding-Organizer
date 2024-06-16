@@ -1,16 +1,16 @@
 import React from 'react'
-import Footer from '../../components/Footer'
+import Footer from '../../../components/Footer';
 import ClientName from './DashboardLayout/ClientName'
 import KonsepMenu from './DashboardLayout/Konsep Acara/KonsepMenu'
 import VendorMenu from './DashboardLayout/Vendor Acara/VendorMenu'
 import DetailMenu from './DashboardLayout/Detail Acara/DetailMenu'
 import DecorMenu from './DashboardLayout/Decoration/DecorMenu'
 import Pakaian from './DashboardLayout/Pakaian/PakaianMenu'
-import SidebarAdmin from '../Admin/components/SidebarAdmin'
-import NavbarAdmin from '../Admin/components/NavbarAdmin'
+import NavbarAdmin from '../components/NavbarAdmin';
+import SidebarAdmin from '../components/SidebarAdmin';
 
 
-const Dashboard = () => {
+const Dashboard2 = () => {
     return (
         <>
         <div className="flex flex-col">
@@ -38,4 +38,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default Dashboard2

@@ -44,7 +44,7 @@ const SidebarAdmin = () => {
                             <p>Request</p>
                         </NavLink>
                         <NavLink
-                            to="/dashboard/concept"
+                            to="/dashboard/concept1"
                             className={({ isActive }) => isActive ? 'p-[10px] flex gap-3 text-gray-700' : 'p-[10px] flex gap-3 text-neutral3'}
                         >
                             <img className='w-5' src={concept} alt="Profile" />
@@ -58,7 +58,7 @@ const SidebarAdmin = () => {
                             <p>Costplan</p>
                         </NavLink>
                         <NavLink
-                            to="/dashboard/schedule"
+                            to="/dashboard/schedule1"
                             className={({ isActive }) => isActive ? 'p-[10px] flex gap-3 text-gray-700' : 'p-[10px] flex gap-3 text-neutral3'}
                         >
                             <img className='w-5' src={schedule} alt="Schedule" />
