@@ -52,7 +52,7 @@ const KonsepTable = () => {
                     </div>
                     <div className='flex justify-between mt-[40px] '>
                         <button type="button" className='bg-neutral2 px-7 py-3 rounded-[8px] text-neutral5 font-semibold' onClick={() => { setPopUp(false) }}>Batal</button>
-                        <button onClick={handlePopUp} className='px-7 py-3 bg-neutral4 text-white rounded-[8px] cursor-pointer items-center'>Tambah</button>
+                        <button onClick={handlePopUp} className='px-7 py-3 bg-neutral4 text-white rounded-[8px] cursor-pointer items-center'>Ubah</button>
                     </div>
                 </form>
             </div>

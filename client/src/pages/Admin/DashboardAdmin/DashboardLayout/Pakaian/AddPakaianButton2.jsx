@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
-const AddPakaianButton = () => {
+const AddPakaianButton2 = () => {
     const [popUp, setPopUp] = useState(false);
 
     const [formData, setFormData] = useState({
@@ -89,4 +89,4 @@ const AddPakaianButton = () => {
     );
 };
 
-export default AddPakaianButton;
+export default AddPakaianButton2;

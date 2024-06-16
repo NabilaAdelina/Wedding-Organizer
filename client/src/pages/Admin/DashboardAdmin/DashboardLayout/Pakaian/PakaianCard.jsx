@@ -3,7 +3,7 @@ const PakaianCard = (props) => {
     const { name, harga, url, deskripsi, jenis, warna, size } = props
     return (
         <>
-        <div className="bg-gray-100 w-[350px] h-[600px] border mt-5 hover:shadow-2xl cursor-pointer">
+        <div className="bg-gray-100 w-[350px] h-[590px] border mt-5 hover:shadow-2xl cursor-pointer">
             <div className='flex w-full' style={{
                 backgroundImage: `url(${url})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '400px',
             }}>
