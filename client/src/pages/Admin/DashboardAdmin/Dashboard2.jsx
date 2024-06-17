@@ -2,10 +2,11 @@ import React from 'react'
 import Footer from '../../../components/Footer';
 import ClientName from './DashboardLayout/ClientName'
 import KonsepMenu from './DashboardLayout/Konsep Acara/KonsepMenu'
-// import VendorMenu from './DashboardLayout/Vendor Acara/VendorMenu'
+import VendorMenu from './DashboardLayout/Vendor Acara/VendorMenu'
 import DetailMenu from './DashboardLayout/Detail Acara/DetailMenu'
 import DecorMenu from './DashboardLayout/Decoration/DecorMenu'
-import Pakaian from './DashboardLayout/Pakaian/PakaianMenu'
+import Pakaian1 from './DashboardLayout/Pakaian/PakaianWanita'
+import Pakaian2 from './DashboardLayout/Pakaian/PakaianPria'
 import NavbarAdmin from '../components/NavbarAdmin';
 import SidebarAdmin from '../components/SidebarAdmin';
 import Swal from 'sweetalert2';
@@ -29,8 +30,9 @@ const Dashboard2 = () => {
                 <SidebarAdmin />
                 <div className='w-flex flex-1 mt-[100px]'>
                     <ClientName />
-                    {/* <VendorMenu /> */}
-                    <Pakaian />
+                    <VendorMenu />
+                    <Pakaian1 />
+                    <Pakaian2 />
                     <DecorMenu />
                     <KonsepMenu />
                     <DetailMenu />

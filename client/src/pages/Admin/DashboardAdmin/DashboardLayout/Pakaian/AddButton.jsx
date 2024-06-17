@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
-const AddPakaianButton2 = () => {
+const AddButton = () => {
     const [popUp, setPopUp] = useState(false);
 
     const [formData, setFormData] = useState({
@@ -31,7 +31,7 @@ const AddPakaianButton2 = () => {
     const PopUpForm = () => {
         return (
             <div className='z-30 fixed top-0 left-[-10px] right-0 bottom-0 bg-black bg-opacity-70 h-full flex justify-center items-center'>
-                <form onSubmit={handleSubmit} action="" className='bg-white p-12 rounded-xl w-[700px]'>
+                <form onSubmit={handleSubmit} action="" className='bg-white p-12 rounded-xl w-[700px] font-switzer'>
                     <div>
                         <div className='flex flex-col gap-5'>
                             <div className='flex flex-col gap-[10px]'>
@@ -60,9 +60,12 @@ const AddPakaianButton2 = () => {
                             </div>
                             <div className='flex flex-col gap-[10px]'>
                                 <label htmlFor="" className='font-semibold text-gray-700'>Tambah Gambar Pakaian</label>
-                                <div className="relative">
-                                    <input type="file" name="gambarPakaian" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
-                                    <button className="px-4 py-1 text-white items-center bg-gray-800 rounded">Upload</button>
+                                <div className="relative border border-gray-500 p-3 rounded-lg">
+                                    <div className='flex flex-col items-center justify-center'>
+                                        <h1 className='text-gray-500'>Cari Gambar</h1>
+                                        <input type="file" name="gambarPakaian" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+                                        <button className="px-4 py-1 text-white items-center bg-neutral4 rounded">Upload</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -89,4 +92,4 @@ const AddPakaianButton2 = () => {
     );
 };
 
-export default AddPakaianButton2;
+export default AddButton;

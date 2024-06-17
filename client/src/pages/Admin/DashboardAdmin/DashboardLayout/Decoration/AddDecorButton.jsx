@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
             noTelp: '',
             harga: '',
             konsep: '',
-            gambarPakaian: ''
+            gambarDekorasi: ''
         });
     
         const handlePopUp = () => {
@@ -55,9 +55,12 @@ import Swal from 'sweetalert2';
                                 </div>
                                 <div className='flex flex-col gap-[10px]'>
                                     <label htmlFor="" className='font-semibold text-gray-700'>Tambah Gambar Dekorasi</label>
-                                    <div className="relative">
-                                        <input type="file" name="gambarPakaian" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
-                                        <button className="px-4 py-1 text-white items-center bg-gray-800 rounded">Upload</button>
+                                    <div className="relative border border-gray-500 p-3 rounded-lg">
+                                        <div className='flex flex-col items-center justify-center'>
+                                            <h1 className='text-gray-500'>Cari Gambar</h1>
+                                            <input type="file" name="gambarDekorasi" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+                                            <button className="px-4 py-1 text-white items-center bg-neutral4 rounded">Upload</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
