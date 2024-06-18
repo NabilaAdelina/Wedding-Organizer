@@ -28,17 +28,23 @@ function App() {
 
   user && console.log(user.role)
 
+
   const navigate = useNavigate()
 
   const { isLogin } = useContext(AuthContext);
 
+
+  useEffect(() => { navigate('/') }, [])
+
   return (
     <Routes>
+
+      <Route path="/" element={<LandingPage />} />
+
       {!user && !isLogin && (
         <>
           <Route path="signup" element={<SignUp />} />
           <Route path="login" element={<Login />} />
-          <Route path="/" element={<LandingPage />} />
         </>
       )}
 
@@ -53,7 +59,7 @@ function App() {
           <Route path='user/profile/edit' element={<EditProfile />} />
           <Route path="/concept" element={<Concept />} />
           <Route path="/schedule" element={<Schedule />} />
-          <Route path="/" element={<LandingPage />} />
+          {/* <Route path="/" element={<LandingPage />} /> */}
         </>
       )}
 
@@ -72,8 +78,7 @@ function App() {
         </>
       )}
 
-      {/* Redirect to home if no user or invalid token */}
-      {!user && useEffect(() => { navigate('/') }, [])}
+
     </Routes>
   );
 }

@@ -5,12 +5,8 @@ const registerUser = async (body) => {
     const { name, email, password, role } = body;
 
     try {
-        // Hash the password
-        const hashedPassword = await bcrypt.hash(password, 10); // 10 is the salt rounds
-
-        // Insert user into database
         const SQLQuery = `INSERT INTO user (name, email, password, role) VALUES (?, ?, ?, ?)`;
-        const [result] = await dbPool.execute(SQLQuery, [name, email, hashedPassword, role]);
+        const [result] = await dbPool.execute(SQLQuery, [name, email, password, role]);
 
         return result;
     } catch (error) {

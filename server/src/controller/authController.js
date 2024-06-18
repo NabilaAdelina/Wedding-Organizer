@@ -2,7 +2,6 @@ const { registerUser, getUserByEmail } = require("../models/authModels");
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-// Register a new user
 const register = async (req, res) => {
     const userData = req.body;
 
@@ -13,6 +12,8 @@ const register = async (req, res) => {
         const hashedPassword = await bcrypt.hash(userData.password, salt);
         userData.password = hashedPassword;
 
+        console.log(userData)
+
         await registerUser(userData);
 
         res.json({
@@ -21,7 +22,6 @@ const register = async (req, res) => {
         });
     } catch (error) {
         console.error('Error in register:', error);
-        // Send error response
         res.status(500).json({
             message: 'Failed to register'
         });
@@ -30,16 +30,7 @@ const register = async (req, res) => {
 
 module.exports = register;
 
-// Login function
 const login = async (req, res) => {
-
-    // const password = "12345"
-
-    // const hash = await bcrypt.hash(password, 13)
-
-    // const isMatch = await bcrypt.compare("123", hash)
-
-    // console.log(isMatch)
 
     const { email, password, role } = req.body;
 
@@ -52,22 +43,19 @@ const login = async (req, res) => {
 
         const user = data[0];
 
-        console.log(user)
+        console.log(user.password)
 
         const validPassword = await bcrypt.compare(password, user.password);
-
-        console.log('passwordmatch:', validPassword)
-
-        // if (!validPassword) {
-        //     return res.status(400).json({ message: 'Invalid password' });
-        // }
-
+        console.log(validPassword)
+        if (!validPassword) {
+            return res.status(400).json({ message: 'Invalid password' });
+        }
 
         if (role && role !== user.role) {
             return res.status(403).json({ message: 'Unauthorized role' });
         }
 
-        const token = jwt.sign({ id: user.id, role: user.role }, 'secret_key', { expiresIn: '1h' });
+        const token = jwt.sign({ id: user.id, role: user.role }, process.env.SECRET_KEY, { expiresIn: '1h' });
 
         res.json({
             message: 'Login successful',
@@ -88,7 +76,7 @@ const login = async (req, res) => {
 };
 
 const logout = (req, res) => {
-
+    res.status(200).json("User has been logged out.");
 };
 
 module.exports = {

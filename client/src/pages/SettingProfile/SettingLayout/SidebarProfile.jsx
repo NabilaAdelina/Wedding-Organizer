@@ -1,9 +1,11 @@
-import logo from '../../../assets/logo/logo-big.svg'
-import profile from '../../../assets/logo/profile-icon.svg'
-import setting from '../../../assets/logo/setting-icon.svg'
-import logout from '../../../assets/icons/logout-icon.svg'
-import { NavLink, useNavigate } from 'react-router-dom'
-import Swal from 'sweetalert2'
+import React from 'react';
+import axios from 'axios';
+import logo from '../../../assets/logo/logo-big.svg';
+import profile from '../../../assets/logo/profile-icon.svg';
+import setting from '../../../assets/logo/setting-icon.svg';
+import logoutIcon from '../../../assets/icons/logout-icon.svg';
+import { NavLink, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const SidebarProfile = () => {
     const navigate = useNavigate();
@@ -20,14 +22,38 @@ const SidebarProfile = () => {
             cancelButtonText: 'Batal'
         }).then((result) => {
             if (result.isConfirmed) {
+                logoutUser();
+            }
+        });
+    }
+
+    const logoutUser = async () => {
+        try {
+            const response = await axios.post('http://localhost:3000/auth/logout', {}, { withCredentials: true });
+
+            if (response.status === 200) {
+                localStorage.removeItem('token');
                 Swal.fire({
                     title: "Berhasil!",
                     text: "Kamu telah keluar dari akun.",
                     icon: "success"
                 });
-                navigate("/")
+                navigate("/");
+            } else {
+                Swal.fire({
+                    title: "Gagal!",
+                    text: "Gagal keluar dari akun.",
+                    icon: "error"
+                });
             }
-        });
+        } catch (error) {
+            Swal.fire({
+                title: "Error!",
+                text: "Terjadi kesalahan.",
+                icon: "error"
+            });
+            console.error('Error:', error);
+        }
     }
 
     return (
@@ -51,15 +77,14 @@ const SidebarProfile = () => {
                             <p>Setting</p>
                         </NavLink>
                     </div>
-
                 </div>
             </div>
             <button onClick={handlePopup} className='flex gap-4'>
-                <img src={logout} alt="Setting" />
+                <img src={logoutIcon} alt="Logout" />
                 <p className='text-[#D55F5A] text-[14px]'>Keluar Akun</p>
             </button>
-        </div >
-    )
+        </div>
+    );
 }
 
-export default SidebarProfile
+export default SidebarProfile;
