@@ -8,9 +8,9 @@ const Schedule = () => {
     return (
         <>
             <div>
-            <Header />
-            <ScheduleLayout />
-            <Footer />
+                <Header />
+                <ScheduleLayout />
+                <Footer />
             </div>
         </>
     )

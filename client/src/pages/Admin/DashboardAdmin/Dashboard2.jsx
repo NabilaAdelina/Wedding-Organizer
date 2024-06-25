@@ -14,39 +14,32 @@ import Swal from 'sweetalert2';
 
 const Dashboard2 = () => {
 
-    const handlePopUp = () => {
-        Swal.fire({
-            title: "Success!",
-            text: "Perubahan telah berhasil!",
-            icon: "success"
-        });
-    }
 
     return (
         <>
-        <div className="flex flex-col">
-            <NavbarAdmin />
-            <div className="flex flex-1">
-                <SidebarAdmin />
-                <div className='w-flex flex-1 mt-[100px]'>
-                    <ClientName />
-                    <VendorMenu />
-                    <Pakaian1 />
-                    <Pakaian2 />
-                    <DecorMenu />
-                    <KonsepMenu />
-                    <DetailMenu />
-                    <div className='flex justify-end'>
-                    <input onClick={(e) => {
-                            e.preventDefault()
-                            handlePopUp()
-                        }} type="submit" value="Simpan Konsep" className='px-5 py-3 m-10 bg-neutral4 text-primary2 rounded-[8px] mt-[50px] cursor-pointer' />
+            <div className="flex flex-col">
+                <NavbarAdmin />
+                <div className="flex flex-1">
+                    <SidebarAdmin />
+                    <div className='w-flex flex-1 mt-[100px]'>
+                        <ClientName />
+                        <VendorMenu />
+                        <Pakaian1 />
+                        <Pakaian2 />
+                        <DecorMenu />
+                        <KonsepMenu />
+                        <DetailMenu />
+                        <div className='flex justify-end'>
+                            <input onClick={(e) => {
+                                e.preventDefault()
+                                handlePopUp()
+                            }} type="submit" value="Simpan Konsep" className='px-5 py-3 m-10 bg-neutral4 text-primary2 rounded-[8px] mt-[50px] cursor-pointer' />
+                        </div>
                     </div>
+
                 </div>
-                
+                <Footer />
             </div>
-            <Footer />
-        </div>
         </>
     )
 }
