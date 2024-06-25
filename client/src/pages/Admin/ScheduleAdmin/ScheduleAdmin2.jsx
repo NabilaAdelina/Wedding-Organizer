@@ -7,16 +7,16 @@ import SALayout from './SALayout/SALayout'
 const ScheduleAdmin2 = () => {
     return (
         <>
-        <div className="flex flex-col">
-            <NavbarAdmin />
-            <div className="flex flex-1">
-                <SidebarAdmin />
-                <div className='w-flex flex-1 mt-[100px]'>
-                    <SALayout />
+            <div className="flex flex-col">
+                <NavbarAdmin />
+                <div className="flex flex-1">
+                    <SidebarAdmin />
+                    <div className='w-flex flex-1 mt-[100px]'>
+                        <SALayout />
+                    </div>
                 </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
         </>
     )
 }

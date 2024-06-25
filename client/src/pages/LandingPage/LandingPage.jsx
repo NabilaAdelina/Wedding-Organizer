@@ -10,7 +10,8 @@ import { createContext, useState } from 'react'
 export const Context = createContext();
 
 const LandingPage = () => {
-    const [isLogin, setIslogin] = useState(true)
+
+    const [isLogin, setIslogin] = useState(JSON.parse(localStorage.getItem("users")))
 
     return (
         <div className='position: relative'>
