@@ -32,7 +32,9 @@ const Header = () => {
                     })}
                 </ul>
                 <div className='flex gap-5'>
-                <img src={profile} alt="" />
+                    <Link to={'/user/profile'}>
+                        <img src={profile} alt="" />
+                    </Link>
                 </div>
             </div>
         </header>
